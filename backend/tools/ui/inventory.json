@@ -1,0 +1,170 @@
+[
+  {
+    "source": "dashboard",
+    "key": "dashboard",
+    "title": "Dashboard",
+    "url": "/",
+    "icon": "grid_view"
+  },
+  {
+    "source": "properties",
+    "key": "properties",
+    "title": "Properties",
+    "url": "/properties",
+    "icon": "domain"
+  },
+  {
+    "source": "bookings",
+    "key": "bookings",
+    "title": "Bookings",
+    "url": "/bookings",
+    "icon": "event_available"
+  },
+  {
+    "source": "property_details",
+    "key": "property-details",
+    "title": "Property Details",
+    "url": "/properties/demo",
+    "icon": "apartment"
+  },
+  {
+    "source": "units_management",
+    "key": "units",
+    "title": "Units",
+    "url": "/units",
+    "icon": "meeting_room"
+  },
+  {
+    "source": "unit_details",
+    "key": "unit-details",
+    "title": "Unit Details",
+    "url": "/units/demo",
+    "icon": "meeting_room"
+  },
+  {
+    "source": "owners",
+    "key": "owners",
+    "title": "Owners",
+    "url": "/owners",
+    "icon": "corporate_fare"
+  },
+  {
+    "source": "tenants",
+    "key": "tenants",
+    "title": "Tenants",
+    "url": "/tenants",
+    "icon": "group"
+  },
+  {
+    "source": "contracts_management",
+    "key": "contracts",
+    "title": "Contracts",
+    "url": "/contracts",
+    "icon": "description"
+  },
+  {
+    "source": "payments",
+    "key": "payments",
+    "title": "Payments",
+    "url": "/payments",
+    "icon": "payments"
+  },
+  {
+    "source": "rent_collection_receivables",
+    "key": "receivables",
+    "title": "Rent Collection",
+    "url": "/receivables",
+    "icon": "account_balance_wallet"
+  },
+  {
+    "source": "maintenance_management",
+    "key": "maintenance",
+    "title": "Maintenance",
+    "url": "/maintenance",
+    "icon": "build"
+  },
+  {
+    "source": "furniture_inventory",
+    "key": "furniture",
+    "title": "Furniture Inventory",
+    "url": "/furniture",
+    "icon": "chair"
+  },
+  {
+    "source": "documents_management",
+    "key": "documents",
+    "title": "Documents",
+    "url": "/documents",
+    "icon": "folder"
+  },
+  {
+    "source": "reports_analytics",
+    "key": "reports",
+    "title": "Reports & Analytics",
+    "url": "/reports",
+    "icon": "monitoring"
+  },
+  {
+    "source": "reports_analytics_2",
+    "key": "reports-operations",
+    "title": "Operational Reports",
+    "url": "/reports/operations",
+    "icon": "analytics"
+  },
+  {
+    "source": "settings_preferences",
+    "key": "settings",
+    "title": "Settings",
+    "url": "/settings",
+    "icon": "settings"
+  },
+  {
+    "source": "property_manager_dashboard",
+    "key": "dashboard-ar",
+    "title": "لوحة المدير",
+    "url": "/dashboard/ar",
+    "icon": "translate"
+  },
+  {
+    "source": "add-property-step-1",
+    "key": "add-property-1",
+    "title": "Add Property — Step 1",
+    "url": "/properties/add/step-1",
+    "icon": "add_home"
+  },
+  {
+    "source": "add-property-step-2",
+    "key": "add-property-2",
+    "title": "Add Property — Step 2",
+    "url": "/properties/add/step-2",
+    "icon": "add_home"
+  },
+  {
+    "source": "add_new_property_step_3",
+    "key": "add-property-3",
+    "title": "Add Property — Step 3",
+    "url": "/properties/add/step-3",
+    "icon": "add_home"
+  },
+  {
+    "source": "add_new_property_step_4",
+    "key": "add-property-4",
+    "title": "Add Property — Step 4",
+    "url": "/properties/add/step-4",
+    "icon": "add_home"
+  },
+  {
+    "source": "add_new_property_step_5",
+    "key": "add-property-5",
+    "title": "Add Property — Step 5",
+    "url": "/properties/add/step-5",
+    "icon": "add_home"
+  },
+  {
+    "source": "add_new_property_step_6",
+    "key": "add-property-6",
+    "title": "Add Property — Step 6",
+    "url": "/properties/add/step-6",
+    "icon": "add_home"
+  }
+]

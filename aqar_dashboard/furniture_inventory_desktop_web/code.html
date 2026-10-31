@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container":"#f0eded","surface-container-low":"#f6f3f2","primary":"#1F4E78","on-surface":"#1b1c1c","on-secondary":"#ffffff","surface-container-high":"#eae7e7","secondary-container":"#ffa5b1","on-tertiary-fixed-variant":"#5f4100","secondary":"#904854","inverse-on-surface":"#f3f0ef","primary-fixed":"#ffdadb","on-secondary-fixed-variant":"#73313d","tertiary-container":"#654600","primary-fixed-dim":"#ffb2b6","background":"#F4F6F9","on-tertiary-fixed":"#271900","on-surface-variant":"#564242","on-primary-fixed-variant":"#842131","on-background":"#1b1c1c","error-container":"#ffdad6","tertiary-fixed-dim":"#f1be65","on-tertiary":"#ffffff","on-primary-container":"#ffa3a9","outline-variant":"#ddc0c0","inverse-primary":"#ffb2b6","on-tertiary-container":"#e6b45c","on-primary-fixed":"#40000d","error":"#ba1a1a","surface-tint":"#a43946","on-secondary-fixed":"#3c0614","secondary-fixed-dim":"#ffb2bb","secondary-fixed":"#ffd9dd","on-secondary-container":"#7b3743","inverse-surface":"#303030","surface-container-highest":"#e4e2e1","on-error-container":"#93000a","surface-container-lowest":"#ffffff","surface-bright":"#F4F6F9","outline":"#897172","primary-container":"#163D60","tertiary-fixed":"#ffdeaa","on-error":"#ffffff","tertiary":"#483100","surface-dim":"#dcd9d9","surface":"#F4F6F9","surface-variant":"#e4e2e1","on-primary":"#ffffff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-sm":"0.5rem","space-xs":"0.25rem","gutter-mobile":"1rem","margin":"2rem","space-md":"1rem","margin-mobile":"1rem","space-lg":"1.5rem","gutter":"1.5rem","space-xl":"2.5rem"},fontFamily:{"headline-xl":["IBM Plex Sans"],"headline-xl-mobile":["IBM Plex Sans"],"label-md":["IBM Plex Sans"],"body-md":["IBM Plex Sans"],"label-sm":["IBM Plex Sans"],"body-sm":["IBM Plex Sans"],"label-lg":["IBM Plex Sans"],"headline-lg":["IBM Plex Sans"],"headline-lg-mobile":["IBM Plex Sans"],"headline-sm":["IBM Plex Sans"],"body-lg":["IBM Plex Sans"],"headline-md":["IBM Plex Sans"]},fontSize:{"headline-xl":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-xl-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-md":["12px",{lineHeight:"16px",fontWeight:"500"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"label-sm":["10px",{lineHeight:"14px",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"500"}],"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg-mobile":["22px",{lineHeight:"30px",letterSpacing:"0",fontWeight:"600"}],"headline-sm":["16px",{lineHeight:"24px",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"headline-md":["20px",{lineHeight:"28px",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed inset-y-0 left-0 w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-on-primary flex-shrink-0 shadow-sm"><span class="material-symbols-outlined text-[20px]">corporate_fare</span></div><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight truncate">Aqar Portal </span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Enterprise</span></div></div><div class="flex-1 overflow-y-auto px-space-md py-space-sm"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm rounded-lg"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md font-medium">Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="properties" href="#"><span class="material-symbols-outlined text-[20px]">domain</span><span class="font-body-md text-body-md font-medium">Properties</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="units" href="#"><span class="material-symbols-outlined text-[20px]">apartment</span><span class="font-body-md text-body-md font-medium">Units</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="owners" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md font-medium">Owners</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="tenants" href="#"><span class="material-symbols-outlined text-[20px]">person</span><span class="font-body-md text-body-md font-medium">Tenants</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="bookings" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="font-body-md text-body-md font-medium">Bookings</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="contracts" href="#"><span class="material-symbols-outlined text-[20px]">description</span><span class="font-body-md text-body-md font-medium">Contracts</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="payments" href="#"><span class="material-symbols-outlined text-[20px]">payments</span><span class="font-body-md text-body-md font-medium">Payments</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="maintenance" href="#"><span class="material-symbols-outlined text-[20px]">handyman</span><span class="font-body-md text-body-md font-medium">Maintenance</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-all bg-primary-container text-on-primary font-semibold shadow-sm rounded-lg" data-path="furniture-inventory" href="#"><span class="material-symbols-outlined text-[20px]">chair</span><span class="font-body-md text-body-md font-medium">Furniture Inventory</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="documents" href="#"><span class="material-symbols-outlined text-[20px]">folder_open</span><span class="font-body-md text-body-md font-medium">Documents</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-body-md text-body-md font-medium">Reports</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md text-body-md font-medium">Settings</span></a></nav></div><div class="p-space-md bg-surface-container-low"><div class="p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_4px_rgba(0,0,0,0.03)] flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><div class="w-2 h-2 rounded-full bg-primary flex-shrink-0 animate-pulse"></div><div class="flex flex-col truncate"><span class="font-label-sm text-label-sm text-on-surface-variant">Environment</span><span class="font-label-md text-label-md font-semibold text-on-surface">Riyadh HQ • Live</span></div></div><span class="material-symbols-outlined text-outline text-[18px]">verified</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between gap-space-lg"><div class="flex-1 max-w-xl"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[20px] pointer-events-none">search</span><input class="w-full h-10 pl-10 pr-4 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md outline-none focus:bg-surface-container-lowest transition-all shadow-[0_1px_3px_rgba(0,0,0,0.02)]" placeholder="Search properties, units, work orders, inventory..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-sm py-1 rounded-lg"><span class="material-symbols-outlined text-outline text-[18px]">language</span><button class="font-label-md text-label-md font-medium text-on-surface hover:text-primary transition-colors flex items-center gap-1" type="button">English<span class="material-symbols-outlined text-[16px]">expand_more</span></button></div><div class="flex items-center gap-space-sm bg-surface-container-low px-space-sm py-1 rounded-lg"><span class="material-symbols-outlined text-outline text-[18px]">attach_money</span><button class="font-label-md text-label-md font-medium text-on-surface hover:text-primary transition-colors flex items-center gap-1" type="button">SAR<span class="material-symbols-outlined text-[16px]">expand_more</span></button></div><button class="relative w-10 h-10 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-4 h-4 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">3</span></button><div class="flex items-center gap-space-md pl-space-sm"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-lg text-label-lg font-semibold text-on-surface leading-tight">Eng. Sultan Al-Shammari</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Operations Manager</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0 shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 min-h-screen bg-background w-full px-space-lg"><div class="flex flex-col w-full">
+<!-- BREADCRUMB & PAGE HEADER -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="hover:text-primary cursor-pointer transition-colors">Dashboard</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-on-surface font-semibold">Furniture Inventory</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Furniture Inventory</h1>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold tracking-wide uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            GCC Enterprise
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Manage furnishings, appliances, asset condition, inventory records, and room-level contents across managed properties.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-auto flex-shrink-0">
+<button class="inline-flex items-center gap-space-xs px-4 h-10 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg font-medium shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">download</span>
+<span>Export Inventory</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-4 h-10 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-all font-label-lg text-label-lg font-semibold shadow-sm active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add Inventory Item</span>
+</button>
+</div>
+</div>
+</div>
+<!-- INSTITUTIONAL DISCLOSURE BANNER -->
+<div class="p-space-md rounded-xl bg-surface-container-low mb-space-lg shadow-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="flex flex-col gap-0.5 flex-1 min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Inventory Integrity & Physical Inspection Governance</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Furniture items and asset conditions are recorded staged manifestations. A recorded condition of 'Good' or 'Needs Attention' reflects administrative records and does not constitute a certified physical inspection until a formal room-by-room condition inspection is completed. Al-Yasmin Compound II inventory remains unassessed pending initial physical check.
+        </p>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px] cursor-pointer hover:text-on-surface">info</span>
+</div>
+</div>
+<!-- KPI SUMMARY METRICS -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md mb-space-xs">
+<!-- Card 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Total Inventory Items</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+</div>
+</div>
+<div class="mt-4 flex flex-col">
+<span class="font-headline-xl text-headline-xl text-on-surface tabular-nums">186</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Across portfolio properties</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Recorded as Good</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+</div>
+<div class="mt-4 flex flex-col">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface tabular-nums">142</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">76.3%</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Operational condition</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Needs Attention</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+</div>
+<div class="mt-4 flex flex-col">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-primary tabular-nums">12</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">6.5%</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Requires maintenance / refurbishment</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Not Assessed</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[18px]">pending</span>
+</div>
+</div>
+<div class="mt-4 flex flex-col">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface tabular-nums">32</span>
+<span class="font-label-sm text-label-sm text-outline font-semibold">17.2%</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Pending initial assessment</span>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Units with Inventory</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">meeting_room</span>
+</div>
+</div>
+<div class="mt-4 flex flex-col">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface tabular-nums">14</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">/ 30 units</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Portfolio unit coverage (46.7%)</span>
+</div>
+</div>
+</div>
+<div class="mb-space-lg px-space-xs">
+<p class="font-body-sm text-body-sm text-outline italic">
+      *The first 3 condition categories (142 Good + 12 Needs Attention + 32 Not Assessed = 186 total items); units with inventory records (14) represent portfolio unit coverage. Al-Yasmin Compound II inventory setup is pending formal staging assessment.
+    </p>
+</div>
+<!-- VIEW TABS -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-2 mb-space-md scrollbar-none">
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold whitespace-nowrap shadow-sm" type="button">
+      All Items (186)
+    </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-medium whitespace-nowrap shadow-sm" type="button">
+      By Property
+    </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-medium whitespace-nowrap shadow-sm" type="button">
+      By Unit
+    </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-medium whitespace-nowrap shadow-sm" type="button">
+      By Room
+    </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-medium whitespace-nowrap shadow-sm" type="button">
+      Needs Attention (12)
+    </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-medium whitespace-nowrap shadow-sm" type="button">
+      Not Assessed (32)
+    </button>
+</div>
+<!-- MULTI-DIMENSIONAL FILTERS TOOLBAR -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm mb-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row gap-space-md">
+<!-- Search Input -->
+<div class="flex-1 relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[20px] pointer-events-none">search</span>
+<input class="w-full h-10 pl-10 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md outline-none focus:bg-surface-container-lowest transition-colors shadow-none" placeholder="Search item, asset reference, property, unit, or room..." type="text"/>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<button class="inline-flex items-center gap-1.5 px-3.5 h-10 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high font-label-md text-label-md font-medium transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">tune</span>
+<span>Advanced Filters</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 h-10 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-primary font-label-md text-label-md font-medium transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Clear Filters</span>
+</button>
+</div>
+</div>
+<!-- Dropdowns Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-space-xs pt-space-xs">
+<!-- Property -->
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-outline mb-1">Property</label>
+<select class="h-9 px-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none cursor-pointer">
+<option>All Properties</option>
+<option>Marina View</option>
+<option>Palm Grove</option>
+<option>Al-Yasmin II</option>
+</select>
+</div>
+<!-- Country -->
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-outline mb-1">Region</label>
+<select class="h-9 px-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none cursor-pointer">
+<option>All GCC</option>
+<option>Saudi Arabia</option>
+<option>UAE</option>
+</select>
+</div>
+<!-- Unit -->
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-outline mb-1">Unit</label>
+<select class="h-9 px-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none cursor-pointer">
+<option>All Units</option>
+<option>MV-101</option>
+<option>MV-104</option>
+<option>PG-01</option>
+<option>PG-02</option>
+<option>PG-03</option>
+</select>
+</div>
+<!-- Room -->
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-outline mb-1">Room</label>
+<select class="h-9 px-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none cursor-pointer">
+<option>All Rooms</option>
+<option>Living Room</option>
+<option>Kitchen</option>
+<option>Dining Area</option>
+<option>Main Bedroom</option>
+<option>Laundry</option>
+</select>
+</div>
+<!-- Category -->
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-outline mb-1">Category</label>
+<select class="h-9 px-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none cursor-pointer">
+<option>All Categories</option>
+<option>Living Room</option>
+<option>Dining</option>
+<option>Bedroom</option>
+<option>Appliances</option>
+<option>Outdoor</option>
+</select>
+</div>
+<!-- Furnishing Type -->
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-outline mb-1">Type</label>
+<select class="h-9 px-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none cursor-pointer">
+<option>All Furnishing</option>
+<option>Fixed Fixture</option>
+<option>Movable Furniture</option>
+<option>White Goods</option>
+</select>
+</div>
+<!-- Condition -->
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-outline mb-1">Condition</label>
+<select class="h-9 px-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none cursor-pointer">
+<option>All Conditions</option>
+<option>Good</option>
+<option>Needs Attention</option>
+<option>Not Assessed</option>
+</select>
+</div>
+<!-- Inspection -->
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-outline mb-1">Inspection</label>
+<select class="h-9 px-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none cursor-pointer">
+<option>All Status</option>
+<option>Not Recorded</option>
+<option>Certified</option>
+<option>Audit Pending</option>
+</select>
+</div>
+</div>
+<!-- Active Count Meta -->
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Showing <strong class="text-on-surface">6</strong> of 186 Inventory Items</span>
+<span class="text-outline">•</span>
+<span>Room-level physical custody ledger active</span>
+</div>
+<span class="hidden md:inline text-outline">Sorted by Last Modified (Descending)</span>
+</div>
+</div>
+<!-- MAIN INVENTORY ASSETS TABLE -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm mb-space-lg overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low font-label-md text-label-md text-on-surface-variant">
+<th class="p-4 w-12 text-center">
+<input class="rounded accent-primary cursor-pointer w-4 h-4" type="checkbox"/>
+</th>
+<th class="py-4 px-3 font-semibold uppercase tracking-wider">Asset Ref</th>
+<th class="py-4 px-3 font-semibold uppercase tracking-wider">Item Name</th>
+<th class="py-4 px-3 font-semibold uppercase tracking-wider">Category</th>
+<th class="py-4 px-3 font-semibold uppercase tracking-wider">Property / Unit</th>
+<th class="py-4 px-3 font-semibold uppercase tracking-wider">Room</th>
+<th class="py-4 px-3 font-semibold uppercase tracking-wider text-center">Qty</th>
+<th class="py-4 px-3 font-semibold uppercase tracking-wider">Recorded Condition</th>
+<th class="py-4 px-3 font-semibold uppercase tracking-wider">Inspection Status</th>
+<th class="p-4 text-right font-semibold uppercase tracking-wider">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 font-body-md text-body-md">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-4 text-center">
+<input class="rounded accent-primary cursor-pointer w-4 h-4" type="checkbox"/>
+</td>
+<td class="py-4 px-3 font-mono font-medium text-primary text-body-sm">AST-2026-001</td>
+<td class="py-4 px-3 font-medium text-on-surface">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">chair</span>
+</div>
+<span>Three-Seater Sofa</span>
+</div>
+</td>
+<td class="py-4 px-3 text-on-surface-variant text-body-sm">Living Room Furniture</td>
+<td class="py-4 px-3">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium text-body-sm">Marina View Residences</span>
+<span class="text-outline text-label-sm">Unit MV-101</span>
+</div>
+</td>
+<td class="py-4 px-3 text-on-surface-variant text-body-sm">Living Room</td>
+<td class="py-4 px-3 text-center tabular-nums font-semibold">1</td>
+<td class="py-4 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#EBF6F0] text-[#1F7A4D] font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#1F7A4D]"></span>
+                Good
+              </span>
+</td>
+<td class="py-4 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+                Inspection Not Recorded
+              </span>
+</td>
+<td class="p-4 text-right">
+<button class="w-8 h-8 rounded-lg inline-flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-4 text-center">
+<input class="rounded accent-primary cursor-pointer w-4 h-4" type="checkbox"/>
+</td>
+<td class="py-4 px-3 font-mono font-medium text-primary text-body-sm">AST-2026-002</td>
+<td class="py-4 px-3 font-medium text-on-surface">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">table_restaurant</span>
+</div>
+<span>Solid Wood Dining Table + 6 Chairs</span>
+</div>
+</td>
+<td class="py-4 px-3 text-on-surface-variant text-body-sm">Dining Furniture</td>
+<td class="py-4 px-3">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium text-body-sm">Marina View Residences</span>
+<span class="text-outline text-label-sm">Unit MV-101</span>
+</div>
+</td>
+<td class="py-4 px-3 text-on-surface-variant text-body-sm">Dining Area</td>
+<td class="py-4 px-3 text-center tabular-nums font-semibold">1</td>
+<td class="py-4 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#EBF6F0] text-[#1F7A4D] font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#1F7A4D]"></span>
+                Good
+              </span>
+</td>
+<td class="py-4 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+                Inspection Not Recorded
+              </span>
+</td>
+<td class="p-4 text-right">
+<button class="w-8 h-8 rounded-lg inline-flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-4 text-center">
+<input class="rounded accent-primary cursor-pointer w-4 h-4" type="checkbox"/>
+</td>
+<td class="py-4 px-3 font-mono font-medium text-primary text-body-sm">AST-2026-003</td>
+<td class="py-4 px-3 font-medium text-on-surface">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">bed</span>
+</div>
+<span>Double Bed & Orthopedic Mattress</span>
+</div>
+</td>
+<td class="py-4 px-3 text-on-surface-variant text-body-sm">Bedroom Furniture</td>
+<td class="py-4 px-3">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium text-body-sm">Palm Grove Chalets</span>
+<span class="text-outline text-label-sm">Unit PG-02</span>
+</div>
+</td>
+<td class="py-4 px-3 text-on-surface-variant text-body-sm">Main Bedroom</td>
+<td class="py-4 px-3 text-center tabular-nums font-semibold">1</td>
+<td class="py-4 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#EBF6F0] text-[#1F7A4D] font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#1F7A4D]"></span>
+                Good
+              </span>
+</td>
+<td class="py-4 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+                Inspection Not Recorded
+              </span>
+</td>
+<td class="p-4 text-right">
+<button class="w-8 h-8 rounded-lg inline-flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 (Selected Row) -->
+<tr class="bg-primary-fixed/25 hover:bg-primary-fixed/35 transition-colors">
+<td class="p-4 text-center">
+<input checked="" class="rounded accent-primary cursor-pointer w-4 h-4" type="checkbox"/>
+</td>
+<td class="py-4 px-3 font-mono font-bold text-primary text-body-sm flex-items-center gap-1">
+<span>AST-2026-004</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary ml-1"></span>
+</td>
+<td class="py-4 px-3 font-semibold text-on-surface">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">kitchen</span>
+</div>
+<span>Refrigerator (Inverter 520L)</span>
+</div>
+</td>
+<td class="py-4 px-3 text-on-surface-variant text-body-sm">Kitchen Appliance</td>
+<td class="py-4 px-3">
+<div class="flex flex-col">
+<span class="text-on-surface font-semibold text-body-sm">Palm Grove Chalets</span>
+<span class="text-primary font-medium text-label-sm">Unit PG-03</span>
+</div>
+</td>
+<td class="py-4 px-3 text-on-surface-variant text-body-sm font-medium">Kitchen</td>
+<td class="py-4 px-3 text-center tabular-nums font-bold text-primary">1</td>
+<td class="py-4 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#FFFAEB] text-[#B54708] font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#B54708]"></span>
+                Needs Attention
+              </span>
+</td>
+<td class="py-4 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+                Inspection Not Recorded
+              </span>
+</td>
+<td class="p-4 text-right">
+<button class="w-8 h-8 rounded-lg inline-flex items-center justify-center text-primary hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-4 text-center">
+<input class="rounded accent-primary cursor-pointer w-4 h-4" type="checkbox"/>
+</td>
+<td class="py-4 px-3 font-mono font-medium text-primary text-body-sm">AST-2026-005</td>
+<td class="py-4 px-3 font-medium text-on-surface">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">local_laundry_service</span>
+</div>
+<span>Front-Load Washing Machine</span>
+</div>
+</td>
+<td class="py-4 px-3 text-on-surface-variant text-body-sm">Laundry Appliance</td>
+<td class="py-4 px-3">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium text-body-sm">Marina View Residences</span>
+<span class="text-outline text-label-sm">Unit MV-104</span>
+</div>
+</td>
+<td class="py-4 px-3 text-on-surface-variant text-body-sm">Laundry Area</td>
+<td class="py-4 px-3 text-center tabular-nums font-semibold">1</td>
+<td class="py-4 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                Not Assessed
+              </span>
+</td>
+<td class="py-4 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+                Not Inspected
+              </span>
+</td>
+<td class="p-4 text-right">
+<button class="w-8 h-8 rounded-lg inline-flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-4 text-center">
+<input class="rounded accent-primary cursor-pointer w-4 h-4" type="checkbox"/>
+</td>
+<td class="py-4 px-3 font-mono font-medium text-primary text-body-sm">AST-2026-006</td>
+<td class="py-4 px-3 font-medium text-on-surface">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">deck</span>
+</div>
+<span>Outdoor Seating Set</span>
+</div>
+</td>
+<td class="py-4 px-3 text-on-surface-variant text-body-sm">Outdoor Furniture</td>
+<td class="py-4 px-3">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium text-body-sm">Palm Grove Chalets</span>
+<span class="text-outline text-label-sm">Unit PG-01</span>
+</div>
+</td>
+<td class="py-4 px-3 text-on-surface-variant text-body-sm">Patio / Balcony</td>
+<td class="py-4 px-3 text-center tabular-nums font-semibold">1</td>
+<td class="py-4 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#EBF6F0] text-[#1F7A4D] font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#1F7A4D]"></span>
+                Good
+              </span>
+</td>
+<td class="py-4 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+                Inspection Not Recorded
+              </span>
+</td>
+<td class="p-4 text-right">
+<button class="w-8 h-8 rounded-lg inline-flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Bottom Pagination -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span>Showing <strong class="text-on-surface">1–6</strong> of 186 inventory items</span>
+<span class="text-outline">|</span>
+<div class="flex items-center gap-1.5">
+<span class="text-outline">Rows per page:</span>
+<select class="bg-surface-container-lowest text-on-surface rounded px-2 py-0.5 font-label-sm text-label-sm outline-none">
+<option>10</option>
+<option>25</option>
+<option>50</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-1 font-label-md text-label-md">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary text-on-primary font-semibold shadow-sm" type="button">1</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" type="button">2</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" type="button">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" type="button">31</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- INVENTORY COVERAGE BY PROPERTY & ROOM CLASSIFICATION -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Property Coverage Column (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Property Inventory Coverage</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Setup completion & verification staging by asset</span>
+</div>
+<button class="font-label-md text-label-md text-primary font-semibold hover:underline" type="button">View Property Inventory</button>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Property 1 -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">domain</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Marina View Residences</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-[#1F7A4D] bg-[#EBF6F0] px-2 py-0.5 rounded-full">100% Configured</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span>10 Units Configured • 94 Staged Items</span>
+<span class="font-mono text-outline">Verified Physical Ledger</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden mt-1">
+<div class="bg-primary h-full rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<!-- Property 2 -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">holiday_village</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Palm Grove Chalets</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-tertiary bg-surface-container-highest px-2 py-0.5 rounded-full">88% Coverage</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span>4 Units Configured • 92 Staged Items</span>
+<span class="font-mono text-outline">2 Pending Items</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden mt-1">
+<div class="bg-primary h-full rounded-full" style="width: 88%;"></div>
+</div>
+</div>
+<!-- Property 3 -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-outline text-[18px]">home_work</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Al-Yasmin Compound II</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-outline bg-surface-container-highest px-2 py-0.5 rounded-full">Saved — Unpublished</span>
+</div>
+<!-- Unit Items Drilldown -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs pt-1">
+<div class="p-2.5 rounded bg-surface-container-lowest shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Unit A-101 (2BR Apt)</span>
+<span class="font-body-sm text-body-sm text-outline">Staged Furnishings • Physical Audit Pending</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container-lowest shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Unit A-102 (3BR Apt)</span>
+<span class="font-body-sm text-body-sm text-outline">Inventory Setup Not Confirmed</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container-lowest shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Unit B-201 (1BR Studio)</span>
+<span class="font-body-sm text-body-sm text-outline">Inventory Setup Not Confirmed</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container-lowest shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Unit V-01 (4BR Villa)</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Unfurnished (Zero items required)</span>
+</div>
+</div>
+<div class="flex justify-end pt-1">
+<button class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-semibold hover:underline" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+                Configure Unit Inventory
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Room-Level Categorization & Inventory Categories (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Room Chips -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Room Classification</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">10 physical operational room categories</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">layers</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<div class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[18px]">weekend</span>
+<span class="font-label-md text-label-md font-medium">Living Room</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[18px]">bed</span>
+<span class="font-label-md text-label-md font-medium">Bedroom</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[18px]">kitchen</span>
+<span class="font-label-md text-label-md font-medium">Kitchen</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[18px]">dining</span>
+<span class="font-label-md text-label-md font-medium">Dining Area</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[18px]">bathtub</span>
+<span class="font-label-md text-label-md font-medium">Bathroom</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[18px]">local_laundry_service</span>
+<span class="font-label-md text-label-md font-medium">Laundry</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[18px]">balcony</span>
+<span class="font-label-md text-label-md font-medium">Balcony</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[18px]">deck</span>
+<span class="font-label-md text-label-md font-medium">Outdoor Area</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[18px]">inventory</span>
+<span class="font-label-md text-label-md font-medium">Storage</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[18px]">more_horiz</span>
+<span class="font-label-md text-label-md font-medium">Other</span>
+</div>
+</div>
+</div>
+<!-- Categories Grid -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<span class="font-headline-sm text-headline-sm text-on-surface">Asset Typology Spectrum</span>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-xs">
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col items-center text-center gap-1 hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[20px]">chair</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Furniture</span>
+<span class="font-body-sm text-body-sm text-outline">98 items</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col items-center text-center gap-1 hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[20px]">microwave</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Appliances</span>
+<span class="font-body-sm text-body-sm text-outline">42 items</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col items-center text-center gap-1 hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[20px]">tv</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Electronics</span>
+<span class="font-body-sm text-body-sm text-outline">24 items</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col items-center text-center gap-1 hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[20px]">light</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Fixtures</span>
+<span class="font-body-sm text-body-sm text-outline">12 items</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col items-center text-center gap-1 hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[20px]">flatware</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Kitchenware</span>
+<span class="font-body-sm text-body-sm text-outline">6 items</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col items-center text-center gap-1 hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[20px]">deck</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Outdoor Items</span>
+<span class="font-body-sm text-body-sm text-outline">4 items</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SELECTED ASSET PREVIEW & CONDITION INSPECTIONS INTEGRATION -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- Selected Asset Dossier (5 cols) -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between h-full">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-primary font-mono font-bold text-label-sm">AST-2026-004</span>
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Active Selection Dossier</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">open_in_new</span>
+</div>
+<div class="flex items-start gap-space-md mb-space-md">
+<div class="w-16 h-16 rounded-xl bg-surface-container-low flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[36px]">kitchen</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Refrigerator (Inverter 520L)</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Palm Grove Chalets • Unit PG-03 (Kitchen)</span>
+<div class="flex items-center gap-2 mt-2">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-[#FFFAEB] text-[#B54708] font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#B54708]"></span>
+                  Needs Attention
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+                  Inspection Not Recorded
+                </span>
+</div>
+</div>
+</div>
+<!-- Specs Table -->
+<div class="rounded-lg bg-surface-container-low p-space-md flex flex-col gap-space-sm mb-space-md text-body-sm">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Serial Number:</span>
+<span class="font-mono text-on-surface">Not Provided</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Purchase Date:</span>
+<span class="text-on-surface">Not Recorded</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Warranty Status:</span>
+<span class="text-on-surface">Not Recorded</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Assigned Physical Room:</span>
+<span class="text-on-surface font-semibold">Kitchen (Zone A)</span>
+</div>
+</div>
+<!-- Clarification Notice -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-2 mb-space-md">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong>Linked Maintenance: Not Linked.</strong> This refrigerator needs attention but is not linked to the separate PG-03 plumbing water leak work order.
+            </p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+<button class="w-full h-9 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors font-label-md text-label-md font-semibold" type="button">
+            View Item
+          </button>
+<button class="w-full h-9 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors font-label-md text-label-md font-semibold" type="button">
+            Edit Item
+          </button>
+<button class="w-full h-9 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors font-label-md text-label-md font-semibold" type="button">
+            Add Condition Note
+          </button>
+<button class="w-full h-9 rounded-lg bg-primary-fixed text-primary hover:bg-primary-fixed-dim transition-colors font-label-md text-label-md font-semibold" type="button">
+            Link Maintenance
+          </button>
+</div>
+</div>
+</div>
+<!-- Condition Inspections Architecture (7 cols) -->
+<div class="lg:col-span-7 flex flex-col">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between h-full">
+<div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">policy</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Furniture & Property Condition Inspections</h3>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Institutional certified audit stages and physical verification lifecycle</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold px-2.5 py-1 rounded bg-surface-container-high text-primary self-start sm:self-auto">
+              ISO-55001 Asset Aligned
+            </span>
+</div>
+<!-- Operational Stages Sequence -->
+<div class="flex items-center justify-between overflow-x-auto py-2 mb-space-md scrollbar-none">
+<div class="flex flex-col items-center text-center min-w-[80px]">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold font-label-sm text-label-sm shadow-sm">1</div>
+<span class="font-label-sm text-label-sm text-on-surface font-medium mt-1">Initial Condition</span>
+</div>
+<div class="h-0.5 flex-1 bg-surface-container-high mx-1"></div>
+<div class="flex flex-col items-center text-center min-w-[80px]">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold font-label-sm text-label-sm">2</div>
+<span class="font-label-sm text-label-sm text-on-surface font-medium mt-1">Check-In</span>
+</div>
+<div class="h-0.5 flex-1 bg-surface-container-high mx-1"></div>
+<div class="flex flex-col items-center text-center min-w-[80px]">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold font-label-sm text-label-sm">3</div>
+<span class="font-label-sm text-label-sm text-on-surface font-medium mt-1">During Stay</span>
+</div>
+<div class="h-0.5 flex-1 bg-surface-container-high mx-1"></div>
+<div class="flex flex-col items-center text-center min-w-[80px]">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold font-label-sm text-label-sm">4</div>
+<span class="font-label-sm text-label-sm text-on-surface font-medium mt-1">Check-Out</span>
+</div>
+<div class="h-0.5 flex-1 bg-surface-container-high mx-1"></div>
+<div class="flex flex-col items-center text-center min-w-[80px]">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold font-label-sm text-label-sm">5</div>
+<span class="font-label-sm text-label-sm text-on-surface font-medium mt-1">Post-Maint</span>
+</div>
+</div>
+<!-- Inspection Capabilities Highlights -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm mb-space-md">
+<div class="p-3 rounded-lg bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">room_preferences</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Room-by-room Assessment</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Step-by-step physical walkthrough validation per space.</span>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">report_problem</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Damage Severity Tagging</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Minor Scratches, Operational Defect, or Broken classifications.</span>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">add_a_photo</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Digital Photographic Evidence</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Floor plan marker association and timestamped camera uploads.</span>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">compare_arrows</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Check-in vs Check-out Delta</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Automated side-by-side photographic comparative review.</span>
+</div>
+</div>
+</div>
+<!-- Damage & Tracking Status Strip -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Open Damage Assessments</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Not Calculated (Pending)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Confirmed Damage Cases</span>
+<span class="font-label-md text-label-md font-semibold text-secondary">None Recorded</span>
+</div>
+</div>
+<div class="flex items-center gap-2 w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-4 h-9 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-all font-label-md text-label-md font-semibold shadow-sm" type="button">
+                Start Condition Inspection
+              </button>
+<button class="flex-1 sm:flex-none px-3 h-9 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-medium" type="button">
+                View History
+              </button>
+</div>
+</div>
+</div>
+<!-- Governance Policy Bottom Note -->
+<p class="font-body-sm text-body-sm text-outline italic">
+<strong>Governance Notice:</strong> Damage assessments do not automatically charge tenants or assign liability. Any financial deposit deduction requires separate authorized lease review and tenant notice.
+        </p>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

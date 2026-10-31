@@ -1,0 +1,16 @@
+{
+  "name": "aqar-ui-build-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "inventory": "node migrate.mjs --inventory",
+    "migrate": "node migrate.mjs",
+    "build": "tailwindcss -c tailwind.config.cjs -i ../../resources/css/manager.css -o ../../public/assets/aqar/manager.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/container-queries": "0.1.1",
+    "@tailwindcss/forms": "0.5.10",
+    "cheerio": "1.0.0",
+    "tailwindcss": "3.4.17"
+  }
+}
