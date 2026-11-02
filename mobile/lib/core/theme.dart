@@ -27,10 +27,17 @@ ThemeData aqarTheme() => ThemeData(
     surface: Colors.white,
   ),
   appBarTheme: const AppBarTheme(
-    backgroundColor: AqarColors.background,
+    backgroundColor: Colors.white,
     foregroundColor: AqarColors.darkNavy,
     surfaceTintColor: Colors.transparent,
     centerTitle: false,
+    titleTextStyle: TextStyle(
+      fontFamily: 'Inter',
+      fontFamilyFallback: ['IBM Plex Sans Arabic'],
+      fontSize: 17,
+      fontWeight: FontWeight.w600,
+      color: AqarColors.darkNavy,
+    ),
   ),
   textTheme: const TextTheme(
     headlineMedium: TextStyle(
@@ -40,7 +47,7 @@ ThemeData aqarTheme() => ThemeData(
       height: 1.2,
     ),
     titleLarge: TextStyle(
-      fontSize: 20,
+      fontSize: 19,
       fontWeight: FontWeight.w700,
       color: AqarColors.ink,
     ),
@@ -50,33 +57,73 @@ ThemeData aqarTheme() => ThemeData(
       color: AqarColors.ink,
     ),
     bodyMedium: TextStyle(fontSize: 13, height: 1.5, color: AqarColors.muted),
-    bodySmall: TextStyle(fontSize: 11, height: 1.5, color: AqarColors.muted),
+    bodySmall: TextStyle(fontSize: 12, height: 1.5, color: AqarColors.muted),
   ),
   inputDecorationTheme: InputDecorationTheme(
     filled: true,
     fillColor: Colors.white,
-    contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 15),
+    contentPadding: const EdgeInsets.symmetric(horizontal: 14, vertical: 13),
+    labelStyle: const TextStyle(fontSize: 13, color: AqarColors.muted),
+    floatingLabelStyle: const TextStyle(
+      fontSize: 12,
+      color: AqarColors.navy,
+      fontWeight: FontWeight.w600,
+    ),
+    errorMaxLines: 3,
     border: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: const BorderSide(color: AqarColors.line),
+      borderRadius: BorderRadius.circular(9),
+      borderSide: const BorderSide(color: Color(0xFFA2B1BF)),
     ),
     enabledBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: const BorderSide(color: AqarColors.line),
+      borderRadius: BorderRadius.circular(9),
+      borderSide: const BorderSide(color: Color(0xFFA2B1BF)),
+    ),
+    focusedBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(9),
+      borderSide: const BorderSide(color: AqarColors.navy, width: 2),
     ),
   ),
   filledButtonTheme: FilledButtonThemeData(
     style: FilledButton.styleFrom(
       padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      minimumSize: const Size(44, 44),
+      textStyle: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(9)),
     ),
   ),
   outlinedButtonTheme: OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+      foregroundColor: AqarColors.navy,
+      minimumSize: const Size(44, 44),
+      textStyle: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
       side: const BorderSide(color: AqarColors.line),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(9)),
     ),
+  ),
+  textButtonTheme: TextButtonThemeData(
+    style: TextButton.styleFrom(
+      minimumSize: const Size(44, 44),
+      textStyle: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
+    ),
+  ),
+  dialogTheme: DialogThemeData(
+    backgroundColor: Colors.white,
+    surfaceTintColor: Colors.transparent,
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+    titleTextStyle: const TextStyle(
+      fontFamily: 'Inter',
+      fontFamilyFallback: ['IBM Plex Sans Arabic'],
+      fontSize: 21,
+      fontWeight: FontWeight.w600,
+      color: AqarColors.darkNavy,
+    ),
+    actionsPadding: const EdgeInsets.fromLTRB(20, 8, 20, 18),
+  ),
+  dividerTheme: const DividerThemeData(
+    color: AqarColors.line,
+    space: 24,
+    thickness: 1,
   ),
   navigationBarTheme: const NavigationBarThemeData(
     backgroundColor: Colors.white,

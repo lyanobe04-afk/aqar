@@ -1,0 +1,5 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {handoverSteps,confirmed,stepCompletion} from '../../public/assets/aqar/handover-flow.js';
+test('eight handover steps describe the entire preserved workflow',()=>{assert.equal(handoverSteps.length,8);assert.equal(handoverSteps[0][0],'Select unit');assert.equal(handoverSteps[7][0],'Generate PDF');assert(handoverSteps.every(([title,description])=>title&&description));});
+test('workflow status reflects saved confirmations, not navigation or a fabricated PDF download',()=>{const h={checkin:{signatures:{manager:{}}},checkout:null};const before=JSON.stringify(h);assert.equal(confirmed(h.checkin),false);assert.deepEqual(stepCompletion({},[{}],h),[true,true,true,false,false,false,false,false]);assert.equal(JSON.stringify(h),before);h.checkin.signatures.tenant={};h.checkout={signatures:{manager:{},tenant:{}}};h.settledAt='2026-11-02';assert.deepEqual(stepCompletion({},[{}],h),[true,true,true,true,true,true,true,false]);});

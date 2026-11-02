@@ -49,7 +49,13 @@ for file, sha in protected.items():
     if digest(ROOT / file) != sha:
         failures.append(f'Protected file changed: {file}')
 
-report = {'websiteScreensMatched': len(web_paths), 'paletteTokensMatched': len(expected_colors), 'identicalImages': len(images), 'identicalFonts': len(fonts), 'protectedFilesUnchanged': protected_count, 'failures': failures}
+for filename in ['demo-seed.json', 'demo-i18n.json']:
+    reference = ROOT / 'demo' / ('seed.json' if filename == 'demo-seed.json' else 'i18n.json')
+    for copy in [WEB / 'public/assets/aqar' / filename, MOBILE / 'assets/data' / filename]:
+        if digest(reference) != digest(copy):
+            failures.append(f'Shared demo asset differs: {copy}')
+
+report = {'sharedDemoAssetsMatched': 2, 'websiteScreensMatched': len(web_paths), 'paletteTokensMatched': len(expected_colors), 'identicalImages': len(images), 'identicalFonts': len(fonts), 'protectedFilesUnchanged': protected_count, 'failures': failures}
 (MOBILE / 'tools/verification.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
 print(json.dumps(report, indent=2))
 raise SystemExit(bool(failures))

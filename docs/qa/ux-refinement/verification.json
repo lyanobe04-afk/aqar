@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-02",
+  "scope": "interactive frontend presentation",
+  "laravel": {
+    "passed": 74,
+    "assertions": 381
+  },
+  "javascript": {
+    "passed": 25
+  },
+  "flutter": {
+    "passed": 231,
+    "newResponsiveCases": 24,
+    "analysisIssues": 0,
+    "releaseWebBuild": "passed"
+  },
+  "http": {
+    "screens": 92,
+    "links": 765,
+    "assets": 555,
+    "failures": 0
+  },
+  "protectedFilesUnchanged": 113,
+  "browserLayoutSamples": 72,
+  "nativeDeviceQA": false
+}

@@ -1,3 +1,5 @@
+> Historical static-phase report. The current interactive role-based demo, verification and limitations are documented in [INTERACTIVE_DEMO.md](INTERACTIVE_DEMO.md). Its scope supersedes the static-only statements below.
+
 # Aqar frontend delivery
 
 ## Website first

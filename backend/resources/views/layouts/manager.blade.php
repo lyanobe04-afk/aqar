@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="{{ asset('assets/aqar/fonts.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/aqar/manager.css') }}">
     <script src="{{ asset('assets/aqar/manager.js') }}" defer></script>
+    <style>html{visibility:hidden}</style>
+    <script type="module" src="{{ asset('assets/aqar/demo-design-guard.js') }}"></script>
 </head>
 <body class="bg-background text-on-surface antialiased" data-screen="{{ $screen }}">
     <a class="skip-link" href="#main-content">Skip to content</a>

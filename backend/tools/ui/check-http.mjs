@@ -8,7 +8,13 @@ const origin='http://127.0.0.1:8000';
 const inventory=JSON.parse(fs.readFileSync(path.join(import.meta.dirname,'inventory.json'),'utf8'));
 const responses=new Map();let links=0,assets=0;const failures=[];
 async function request(url){if(!responses.has(url)){const res=await fetch(url);responses.set(url,{status:res.status,text:await res.text()});}return responses.get(url);}
-for(const screen of inventory){
+const landing=await request(origin+'/welcome');
+const landingDom=load(landing.text);
+const demoConfig=JSON.parse(landingDom('#demo-config').text());
+const interactive=Object.entries(demoConfig.routes).map(([key,url])=>({key,url:new URL(url).pathname}));
+const designScreens=inventory.map(s=>({...s,key:'design.'+s.key,url:'/designs'+(s.url==='/'?'/dashboard':s.url)}));
+const screens=[...interactive,...designScreens];
+for(const screen of screens){
  const url=origin+screen.url;
  const response=await request(url);
  if(response.status!==200){failures.push(`${screen.key}: ${response.status}`);continue;}
@@ -24,7 +30,7 @@ for(const screen of inventory){
  for(const href of urls){if(href.startsWith('data:'))continue;const dest=new URL(href,url);assets++;if(dest.origin!==origin||!fs.existsSync(path.join(base,'public',decodeURIComponent(dest.pathname))))failures.push(`${screen.key}: missing/nonlocal asset ${href}`);}
  if($('aside.manager-sidebar').length!==1||$('header.manager-header').length!==1||$('main').length!==1)failures.push(`${screen.key}: duplicate shell`);
  if($('a[href="#"]').length||$('[onclick]').length||$('script[src*="tailwind"]').length)failures.push(`${screen.key}: placeholder or runtime code`);
- if(screen.key.startsWith('add-property-')&&$('.property-step-navigation a').length!==6)failures.push(`${screen.key}: incorrect step navigation`);
+ if(screen.key.startsWith('design.add-property-')&&$('.property-step-navigation a').length!==6)failures.push(`${screen.key}: incorrect step navigation`);
 }
 const css=fs.readFileSync(path.join(base,'public/assets/aqar/fonts.css'),'utf8');
 for(const match of css.matchAll(/url\(([^)]+)\)/g))if(!fs.existsSync(path.join(base,'public/assets/aqar',match[1])))failures.push(`Missing font ${match[1]}`);
@@ -38,6 +44,6 @@ for(const [file,hash] of Object.entries(hashes)){
 let galleryLinks=0;
 const gallery=load(fs.readFileSync(path.join(root,'client_demo/index.html'),'utf8'));
 gallery('a[href],img[src]').each((_,el)=>{const href=gallery(el).attr('href')||gallery(el).attr('src');if(!/^(?:https?:|#|data:)/.test(href)){galleryLinks++;if(!fs.existsSync(path.resolve(root,'client_demo',decodeURIComponent(href))))failures.push(`Client gallery missing target ${href}`);}});
-const report={screens:inventory.length,linksChecked:links,assetReferencesChecked:assets,uniqueHttpTargets:responses.size,protectedFilesUnchanged:protectedFiles,galleryLinksChecked:galleryLinks,failures};
+const report={screens:screens.length,linksChecked:links,assetReferencesChecked:assets,uniqueHttpTargets:responses.size,protectedFilesUnchanged:protectedFiles,galleryLinksChecked:galleryLinks,failures};
 fs.writeFileSync(path.join(import.meta.dirname,'verification.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
 if(failures.length)process.exitCode=1;

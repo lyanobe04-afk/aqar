@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'app.dart';
+import 'demo/interactive_app.dart';
 
-void main() => runApp(const AqarApp());
+void main() => runApp(const InteractiveAqarApp());

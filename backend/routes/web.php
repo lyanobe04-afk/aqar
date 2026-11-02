@@ -13,5 +13,11 @@ Route::withoutMiddleware([StartSession::class, ShareErrorsFromSession::class, Va
         Route::get($definition['path'], [ScreenController::class, 'show'])
             ->defaults('screen', $screen)
             ->name('manager.'.$screen);
+        Route::get('/designs'.($definition['path'] === '/' ? '/dashboard' : $definition['path']), [ScreenController::class, 'design'])
+            ->defaults('screen', $screen)->name('design.'.$screen);
+    }
+    foreach (config('demo') as $screen => $definition) {
+        Route::get($definition[0], [ScreenController::class, 'demo'])
+            ->defaults('screen', $screen)->name('demo.'.$screen);
     }
 });

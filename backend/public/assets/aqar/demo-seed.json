@@ -1,0 +1,2376 @@
+{
+  "version": 2,
+  "accounts": [
+    {
+      "id": "manager1",
+      "name": "Sultan Al-Najdi",
+      "nameAr": "سلطان النجدي",
+      "email": "manager@aqar.demo",
+      "role": "manager",
+      "propertyIds": [],
+      "phone": "0500000001",
+      "passwordHash": "588c55f3ce2b8569b153c5abbf13f9f74308b88a20017cc699b835cc93195d16"
+    },
+    {
+      "id": "owner1",
+      "name": "Noura Al-Riyadh",
+      "nameAr": "نورة الرياض",
+      "email": "owner@aqar.demo",
+      "role": "owner",
+      "propertyIds": [
+        "p1",
+        "p2"
+      ],
+      "phone": "0500000002",
+      "passwordHash": "588c55f3ce2b8569b153c5abbf13f9f74308b88a20017cc699b835cc93195d16"
+    },
+    {
+      "id": "tenant1",
+      "name": "Omar Al-Salem",
+      "nameAr": "عمر السالم",
+      "email": "tenant@aqar.demo",
+      "role": "tenant",
+      "propertyIds": [
+        "p1"
+      ],
+      "phone": "0500000003",
+      "passwordHash": "588c55f3ce2b8569b153c5abbf13f9f74308b88a20017cc699b835cc93195d16"
+    }
+  ],
+  "properties": [
+    {
+      "id": "p1",
+      "name": "Al-Yasmin Compound II",
+      "nameAr": "مجمع الياسمين ٢",
+      "city": "Riyadh",
+      "district": "Al-Yasmin",
+      "country": "SA",
+      "address": "King Abdulaziz Road, Plot 449",
+      "category": "Apartment",
+      "ownerId": "owner1",
+      "price": 7500,
+      "unitCount": 4,
+      "policy": "request",
+      "published": true,
+      "image": "dbb2a71ef1c083e218bb.jpg",
+      "description": "Fictional executive apartments with a shared garden, parking and family amenities.",
+      "region": "Riyadh",
+      "postalCode": "",
+      "timeZone": "Asia/Riyadh",
+      "currency": "SAR",
+      "publication": "published",
+      "availability": "available",
+      "listingType": "rent",
+      "ratePeriod": "month",
+      "minNights": 1,
+      "amenities": [
+        "Parking",
+        "Wi-Fi"
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "Al-Nakheel Private Chalet",
+      "nameAr": "شاليه النخيل الخاص",
+      "city": "Riyadh",
+      "district": "Al-Ammariyah",
+      "country": "SA",
+      "address": "Palm Garden Lane, Plot 12",
+      "category": "Chalet",
+      "ownerId": "owner1",
+      "price": 850,
+      "unitCount": 1,
+      "policy": "instant",
+      "published": true,
+      "image": "81a35314118e109fff15.jpg",
+      "description": "Fictional private chalet with pool and outdoor seating. Nightly demo pricing.",
+      "region": "Riyadh",
+      "postalCode": "",
+      "timeZone": "Asia/Riyadh",
+      "currency": "SAR",
+      "publication": "published",
+      "availability": "available",
+      "listingType": "rent",
+      "ratePeriod": "night",
+      "minNights": 1,
+      "amenities": [
+        "Parking",
+        "Wi-Fi"
+      ]
+    },
+    {
+      "id": "p3",
+      "name": "Al-Reef Farm Retreat",
+      "nameAr": "منتجع مزرعة الريف",
+      "city": "Al-Kharj",
+      "district": "Oasis Quarter",
+      "country": "SA",
+      "address": "Oasis Road, Plot 19",
+      "category": "Farm",
+      "ownerId": "owner2",
+      "price": 1200,
+      "unitCount": 2,
+      "policy": "request",
+      "published": true,
+      "image": "16f2386755ee37651245.jpg",
+      "description": "Fictional leisure farm and guest lodge in a date-palm setting.",
+      "region": "Al-Kharj",
+      "postalCode": "",
+      "timeZone": "Asia/Riyadh",
+      "currency": "SAR",
+      "publication": "published",
+      "availability": "available",
+      "listingType": "rent",
+      "ratePeriod": "night",
+      "minNights": 1,
+      "amenities": [
+        "Parking",
+        "Wi-Fi"
+      ]
+    },
+    {
+      "id": "p4",
+      "name": "Burj Al-Ulya Offices",
+      "nameAr": "مكاتب برج العليا",
+      "city": "Riyadh",
+      "district": "Al-Olaya",
+      "country": "SA",
+      "address": "Business Boulevard, Plot 31",
+      "category": "Commercial",
+      "ownerId": "owner2",
+      "price": 18000,
+      "unitCount": 2,
+      "policy": "request",
+      "published": false,
+      "image": "f53bc455d2944f5f5212.jpg",
+      "description": "Fictional commercial offices. Unpublished sample property.",
+      "region": "Riyadh",
+      "postalCode": "",
+      "timeZone": "Asia/Riyadh",
+      "currency": "SAR",
+      "publication": "draft",
+      "availability": "available",
+      "listingType": "rent",
+      "ratePeriod": "month",
+      "minNights": 1,
+      "amenities": [
+        "Parking",
+        "Wi-Fi"
+      ]
+    },
+    {
+      "id": "p5",
+      "name": "Al-Hamra Family Villa",
+      "nameAr": "فيلا الحمراء العائلية",
+      "city": "Jeddah",
+      "district": "Al-Hamra",
+      "country": "SA",
+      "address": "Coastal Avenue, Plot 55",
+      "category": "Villa",
+      "ownerId": "owner2",
+      "price": 12000,
+      "unitCount": 1,
+      "policy": "request",
+      "published": true,
+      "image": "79c2ffe6ec71bf02c76b.jpg",
+      "description": "Fictional family villa with courtyard and covered parking.",
+      "region": "Jeddah",
+      "postalCode": "",
+      "timeZone": "Asia/Riyadh",
+      "currency": "SAR",
+      "publication": "published",
+      "availability": "available",
+      "listingType": "rent",
+      "ratePeriod": "month",
+      "minNights": 1,
+      "amenities": [
+        "Parking",
+        "Wi-Fi"
+      ]
+    },
+    {
+      "id": "p6",
+      "name": "Diriyah Heritage House",
+      "nameAr": "بيت الدرعية التراثي",
+      "city": "Diriyah",
+      "district": "Heritage Quarter",
+      "country": "SA",
+      "address": "Heritage Lane, Plot 7",
+      "category": "Rest house",
+      "ownerId": "owner2",
+      "price": 950,
+      "unitCount": 1,
+      "policy": "instant",
+      "published": true,
+      "image": "5b2274142101e7feafab.jpg",
+      "description": "Fictional traditional rest house. Nightly sample pricing.",
+      "region": "Diriyah",
+      "postalCode": "",
+      "timeZone": "Asia/Riyadh",
+      "currency": "SAR",
+      "publication": "published",
+      "availability": "available",
+      "listingType": "rent",
+      "ratePeriod": "night",
+      "minNights": 1,
+      "amenities": [
+        "Parking",
+        "Wi-Fi"
+      ]
+    },
+    {
+      "id": "p-global-london",
+      "name": "Mayfair Garden Residence",
+      "nameAr": "شقق مايفير جاردن",
+      "country": "GB",
+      "city": "London",
+      "region": "Greater London",
+      "district": "Mayfair",
+      "address": "18 Fictional Garden Mews",
+      "postalCode": "W1K 0AA",
+      "timeZone": "Europe/London",
+      "currency": "GBP",
+      "price": 180,
+      "policy": "instant",
+      "category": "Apartment",
+      "ownerId": "owner2",
+      "unitCount": 1,
+      "published": true,
+      "publication": "published",
+      "availability": "available",
+      "listingType": "rent",
+      "ratePeriod": "night",
+      "minNights": 1,
+      "amenities": [
+        "Wi-Fi",
+        "Kitchen"
+      ],
+      "image": "dbb2a71ef1c083e218bb.jpg",
+      "description": "Fictional international property for presentation only."
+    },
+    {
+      "id": "p-global-dubai",
+      "name": "Marina Horizon Apartment",
+      "nameAr": "شقة مارينا هورايزن",
+      "country": "AE",
+      "city": "Dubai",
+      "region": "Dubai",
+      "district": "Dubai Marina",
+      "address": "24 Fictional Marina Walk",
+      "postalCode": "",
+      "timeZone": "Asia/Dubai",
+      "currency": "AED",
+      "price": 650,
+      "policy": "request",
+      "category": "Apartment",
+      "ownerId": "owner2",
+      "unitCount": 1,
+      "published": true,
+      "publication": "published",
+      "availability": "available",
+      "listingType": "rent",
+      "ratePeriod": "night",
+      "minNights": 1,
+      "amenities": [
+        "Wi-Fi",
+        "Kitchen"
+      ],
+      "image": "dbb2a71ef1c083e218bb.jpg",
+      "description": "Fictional international property for presentation only."
+    },
+    {
+      "id": "p-global-newyork",
+      "name": "Hudson Terrace Loft",
+      "nameAr": "لوفت هدسون تيراس",
+      "country": "US",
+      "city": "New York",
+      "region": "New York",
+      "district": "Chelsea",
+      "address": "30 Fictional Hudson Terrace",
+      "postalCode": "10001",
+      "timeZone": "America/New_York",
+      "currency": "USD",
+      "price": 220,
+      "policy": "instant",
+      "category": "Apartment",
+      "ownerId": "owner2",
+      "unitCount": 1,
+      "published": true,
+      "publication": "published",
+      "availability": "available",
+      "listingType": "rent",
+      "ratePeriod": "night",
+      "minNights": 1,
+      "amenities": [
+        "Wi-Fi",
+        "Kitchen"
+      ],
+      "image": "dbb2a71ef1c083e218bb.jpg",
+      "description": "Fictional international property for presentation only."
+    }
+  ],
+  "owners": [
+    {
+      "id": "owner1",
+      "name": "Noura Al-Riyadh",
+      "email": "owner@aqar.demo"
+    },
+    {
+      "id": "owner2",
+      "name": "Fahad Al-Waha",
+      "email": "fahad.owner@aqar.demo"
+    }
+  ],
+  "units": [
+    {
+      "id": "u1",
+      "propertyId": "p1",
+      "name": "A-101",
+      "beds": 2,
+      "baths": 2,
+      "area": 115,
+      "price": 7500,
+      "status": "vacant"
+    },
+    {
+      "id": "u2",
+      "propertyId": "p1",
+      "name": "A-102",
+      "beds": 3,
+      "baths": 3,
+      "area": 145,
+      "price": 9200,
+      "status": "occupied"
+    },
+    {
+      "id": "u3",
+      "propertyId": "p1",
+      "name": "B-201",
+      "beds": 1,
+      "baths": 1,
+      "area": 78,
+      "price": 5400,
+      "status": "vacant"
+    },
+    {
+      "id": "u4",
+      "propertyId": "p1",
+      "name": "V-01",
+      "beds": 4,
+      "baths": 5,
+      "area": 380,
+      "price": 15000,
+      "status": "maintenance"
+    },
+    {
+      "id": "u5",
+      "propertyId": "p2",
+      "name": "CH-01",
+      "beds": 2,
+      "baths": 2,
+      "area": 120,
+      "price": 850,
+      "status": "vacant"
+    },
+    {
+      "id": "u6",
+      "propertyId": "p3",
+      "name": "LODGE-01",
+      "beds": 3,
+      "baths": 2,
+      "area": 220,
+      "price": 1200,
+      "status": "vacant"
+    },
+    {
+      "id": "u7",
+      "propertyId": "p4",
+      "name": "OFF-01",
+      "beds": 0,
+      "baths": 2,
+      "area": 240,
+      "price": 18000,
+      "status": "vacant"
+    },
+    {
+      "id": "u8",
+      "propertyId": "p5",
+      "name": "VILLA-01",
+      "beds": 4,
+      "baths": 4,
+      "area": 310,
+      "price": 12000,
+      "status": "vacant"
+    },
+    {
+      "id": "u9",
+      "propertyId": "p6",
+      "name": "REST-01",
+      "beds": 2,
+      "baths": 2,
+      "area": 160,
+      "price": 950,
+      "status": "vacant"
+    },
+    {
+      "id": "p-global-london-u1",
+      "propertyId": "p-global-london",
+      "name": "Suite 101",
+      "beds": 2,
+      "baths": 2,
+      "area": 95,
+      "price": 180,
+      "currency": "GBP",
+      "ratePeriod": "night",
+      "status": "vacant",
+      "amenities": [
+        "Wi-Fi"
+      ],
+      "photos": []
+    },
+    {
+      "id": "p-global-dubai-u1",
+      "propertyId": "p-global-dubai",
+      "name": "Suite 101",
+      "beds": 2,
+      "baths": 2,
+      "area": 95,
+      "price": 650,
+      "currency": "AED",
+      "ratePeriod": "night",
+      "status": "vacant",
+      "amenities": [
+        "Wi-Fi"
+      ],
+      "photos": []
+    },
+    {
+      "id": "p-global-newyork-u1",
+      "propertyId": "p-global-newyork",
+      "name": "Suite 101",
+      "beds": 2,
+      "baths": 2,
+      "area": 95,
+      "price": 220,
+      "currency": "USD",
+      "ratePeriod": "night",
+      "status": "vacant",
+      "amenities": [
+        "Wi-Fi"
+      ],
+      "photos": []
+    }
+  ],
+  "bookings": [
+    {
+      "id": "b1",
+      "propertyId": "p1",
+      "unitId": "u2",
+      "tenantId": "tenant1",
+      "start": "2026-11-01",
+      "end": "2026-12-01",
+      "amount": 9200,
+      "status": "approved",
+      "policy": "request"
+    },
+    {
+      "id": "b2",
+      "propertyId": "p2",
+      "unitId": "u5",
+      "tenantId": "tenant1",
+      "start": "2026-12-10",
+      "end": "2026-12-13",
+      "amount": 2550,
+      "status": "pending",
+      "policy": "request"
+    },
+    {
+      "id": "b3",
+      "propertyId": "p3",
+      "unitId": "u6",
+      "tenantId": "tenant2",
+      "start": "2026-12-20",
+      "end": "2026-12-23",
+      "amount": 3600,
+      "status": "confirmed",
+      "policy": "request"
+    }
+  ],
+  "tenants": [
+    {
+      "id": "tenant1",
+      "name": "Omar Al-Salem",
+      "email": "tenant@aqar.demo"
+    },
+    {
+      "id": "tenant2",
+      "name": "Reem Al-Nour",
+      "email": "reem.tenant@aqar.demo"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay1",
+      "bookingId": "b1",
+      "propertyId": "p1",
+      "tenantId": "tenant1",
+      "amount": 5000,
+      "status": "verified",
+      "date": "2026-11-01",
+      "note": "SIMULATED bank receipt; no money moved."
+    },
+    {
+      "id": "pay2",
+      "bookingId": "b1",
+      "propertyId": "p1",
+      "tenantId": "tenant1",
+      "amount": 1200,
+      "status": "pending",
+      "date": "2026-11-01",
+      "note": "SIMULATED pending receipt."
+    },
+    {
+      "id": "pay3",
+      "bookingId": "b3",
+      "propertyId": "p3",
+      "tenantId": "tenant2",
+      "amount": 3600,
+      "status": "verified",
+      "date": "2026-10-31",
+      "note": "SIMULATED verified record."
+    }
+  ],
+  "contracts": [
+    {
+      "id": "c1",
+      "bookingId": "b1",
+      "propertyId": "p1",
+      "tenantId": "tenant1",
+      "title": "Sample residential lease — A-102",
+      "status": "active",
+      "amount": 9200,
+      "start": "2026-11-01",
+      "end": "2026-12-01"
+    },
+    {
+      "id": "c2",
+      "bookingId": "b3",
+      "propertyId": "p3",
+      "tenantId": "tenant2",
+      "title": "Sample farm lodge agreement",
+      "status": "draft",
+      "amount": 3600,
+      "start": "2026-12-20",
+      "end": "2026-12-23"
+    }
+  ],
+  "maintenance": [
+    {
+      "id": "m1",
+      "propertyId": "p1",
+      "tenantId": "tenant1",
+      "title": "Bathroom water leak",
+      "description": "Fictional inspection request for a leaking tap.",
+      "cost": 450,
+      "status": "pending approval",
+      "priority": "medium",
+      "comments": [],
+      "photos": []
+    },
+    {
+      "id": "m2",
+      "propertyId": "p2",
+      "tenantId": "tenant1",
+      "title": "Pool pump service",
+      "description": "Fictional routine preventive service.",
+      "cost": 800,
+      "status": "in progress",
+      "priority": "low",
+      "comments": [],
+      "photos": []
+    },
+    {
+      "id": "m3",
+      "propertyId": "p3",
+      "tenantId": "tenant2",
+      "title": "Guest room AC inspection",
+      "description": "Fictional cooling performance issue.",
+      "cost": 600,
+      "status": "pending approval",
+      "priority": "high",
+      "comments": [],
+      "photos": []
+    }
+  ],
+  "expenses": [
+    {
+      "id": "e1",
+      "propertyId": "p1",
+      "title": "Sample garden service",
+      "amount": 700,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "e2",
+      "propertyId": "p2",
+      "title": "Sample pool upkeep",
+      "amount": 350,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "e3",
+      "propertyId": "p3",
+      "title": "Sample grounds service",
+      "amount": 900,
+      "date": "2026-11-01"
+    }
+  ],
+  "furniture": [
+    {
+      "id": "f1",
+      "propertyId": "p1",
+      "name": "Living room sofa",
+      "room": "Living room",
+      "quantity": 1,
+      "condition": "good"
+    },
+    {
+      "id": "f2",
+      "propertyId": "p1",
+      "name": "Dining table",
+      "room": "Dining area",
+      "quantity": 1,
+      "condition": "not assessed"
+    },
+    {
+      "id": "f3",
+      "propertyId": "p2",
+      "name": "Outdoor chairs",
+      "room": "Terrace",
+      "quantity": 4,
+      "condition": "good"
+    }
+  ],
+  "documents": [
+    {
+      "id": "d1",
+      "propertyId": "p1",
+      "title": "Sample title deed",
+      "type": "Ownership"
+    },
+    {
+      "id": "d2",
+      "propertyId": "p1",
+      "title": "Sample floor plan",
+      "type": "Property"
+    },
+    {
+      "id": "d3",
+      "propertyId": "p2",
+      "title": "Sample maintenance report",
+      "type": "Inspection"
+    },
+    {
+      "id": "d4",
+      "propertyId": "p3",
+      "title": "Sample management agreement",
+      "type": "Management"
+    }
+  ],
+  "inspections": [],
+  "notifications": [
+    {
+      "id": "n1",
+      "role": "manager",
+      "title": "Two sample bookings await review",
+      "read": false
+    },
+    {
+      "id": "n2",
+      "role": "owner",
+      "accountId": "owner1",
+      "title": "Bathroom water leak awaits approval",
+      "read": false
+    },
+    {
+      "id": "n3",
+      "role": "tenant",
+      "accountId": "tenant1",
+      "title": "Your sample lease is available",
+      "read": false
+    }
+  ],
+  "settings": {
+    "country": "SA",
+    "currency": "SAR",
+    "locale": "en",
+    "timeZone": "UTC",
+    "dateFormat": "yyyy-MM-dd",
+    "measurement": "sqm",
+    "phoneCode": "+966",
+    "notifications": true
+  },
+  "draft": {},
+  "global": {
+    "revision": 3,
+    "countries": [
+      {
+        "code": "AD",
+        "name": "Andorra",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "AE",
+        "name": "United Arab Emirates",
+        "currency": "AED",
+        "currencyName": "United Arab Emirates Dirham"
+      },
+      {
+        "code": "AF",
+        "name": "Afghanistan",
+        "currency": "AFN",
+        "currencyName": "Afghan Afghani"
+      },
+      {
+        "code": "AG",
+        "name": "Antigua & Barbuda",
+        "currency": "XCD",
+        "currencyName": "East Caribbean Dollar"
+      },
+      {
+        "code": "AI",
+        "name": "Anguilla",
+        "currency": "XCD",
+        "currencyName": "East Caribbean Dollar"
+      },
+      {
+        "code": "AL",
+        "name": "Albania",
+        "currency": "ALL",
+        "currencyName": "Albanian Lek"
+      },
+      {
+        "code": "AM",
+        "name": "Armenia",
+        "currency": "AMD",
+        "currencyName": "Armenian Dram"
+      },
+      {
+        "code": "AO",
+        "name": "Angola",
+        "currency": "AOA",
+        "currencyName": "Angolan Kwanza"
+      },
+      {
+        "code": "AR",
+        "name": "Argentina",
+        "currency": "ARS",
+        "currencyName": "Argentine Peso"
+      },
+      {
+        "code": "AS",
+        "name": "American Samoa",
+        "currency": "USD",
+        "currencyName": "US Dollar"
+      },
+      {
+        "code": "AT",
+        "name": "Austria",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "AU",
+        "name": "Australia",
+        "currency": "AUD",
+        "currencyName": "Australian Dollar"
+      },
+      {
+        "code": "AW",
+        "name": "Aruba",
+        "currency": "AWG",
+        "currencyName": "Aruban Florin"
+      },
+      {
+        "code": "AX",
+        "name": "Åland Islands",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "AZ",
+        "name": "Azerbaijan",
+        "currency": "AZN",
+        "currencyName": "Azerbaijani Manat"
+      },
+      {
+        "code": "BA",
+        "name": "Bosnia & Herzegovina",
+        "currency": "BAM",
+        "currencyName": "Bosnia-Herzegovina Convertible Mark"
+      },
+      {
+        "code": "BB",
+        "name": "Barbados",
+        "currency": "BBD",
+        "currencyName": "Barbadian Dollar"
+      },
+      {
+        "code": "BD",
+        "name": "Bangladesh",
+        "currency": "BDT",
+        "currencyName": "Bangladeshi Taka"
+      },
+      {
+        "code": "BE",
+        "name": "Belgium",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "BF",
+        "name": "Burkina Faso",
+        "currency": "XOF",
+        "currencyName": "West African CFA Franc"
+      },
+      {
+        "code": "BG",
+        "name": "Bulgaria",
+        "currency": "BGN",
+        "currencyName": "Bulgarian Lev"
+      },
+      {
+        "code": "BH",
+        "name": "Bahrain",
+        "currency": "BHD",
+        "currencyName": "Bahraini Dinar"
+      },
+      {
+        "code": "BI",
+        "name": "Burundi",
+        "currency": "BIF",
+        "currencyName": "Burundian Franc"
+      },
+      {
+        "code": "BJ",
+        "name": "Benin",
+        "currency": "XOF",
+        "currencyName": "West African CFA Franc"
+      },
+      {
+        "code": "BL",
+        "name": "St. Barthélemy",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "BM",
+        "name": "Bermuda",
+        "currency": "BMD",
+        "currencyName": "Bermudan Dollar"
+      },
+      {
+        "code": "BN",
+        "name": "Brunei",
+        "currency": "BND",
+        "currencyName": "Brunei Dollar"
+      },
+      {
+        "code": "BO",
+        "name": "Bolivia",
+        "currency": "BOB",
+        "currencyName": "Bolivian Boliviano"
+      },
+      {
+        "code": "BQ",
+        "name": "Bonaire, Sint Eustatius and Saba",
+        "currency": "USD",
+        "currencyName": "US Dollar"
+      },
+      {
+        "code": "BR",
+        "name": "Brazil",
+        "currency": "BRL",
+        "currencyName": "Brazilian Real"
+      },
+      {
+        "code": "BS",
+        "name": "Bahamas",
+        "currency": "BSD",
+        "currencyName": "Bahamian Dollar"
+      },
+      {
+        "code": "BT",
+        "name": "Bhutan",
+        "currency": "BTN",
+        "currencyName": "Bhutanese Ngultrum"
+      },
+      {
+        "code": "BW",
+        "name": "Botswana",
+        "currency": "BWP",
+        "currencyName": "Botswanan Pula"
+      },
+      {
+        "code": "BY",
+        "name": "Belarus",
+        "currency": "BYN",
+        "currencyName": "Belarusian Ruble"
+      },
+      {
+        "code": "BZ",
+        "name": "Belize",
+        "currency": "BZD",
+        "currencyName": "Belize Dollar"
+      },
+      {
+        "code": "CA",
+        "name": "Canada",
+        "currency": "CAD",
+        "currencyName": "Canadian Dollar"
+      },
+      {
+        "code": "CC",
+        "name": "Cocos (Keeling) Islands",
+        "currency": "AUD",
+        "currencyName": "Australian Dollar"
+      },
+      {
+        "code": "CD",
+        "name": "Congo (DRC)",
+        "currency": "CDF",
+        "currencyName": "Congolese Franc"
+      },
+      {
+        "code": "CF",
+        "name": "Central African Republic",
+        "currency": "XAF",
+        "currencyName": "Central African CFA Franc"
+      },
+      {
+        "code": "CG",
+        "name": "Congo",
+        "currency": "XAF",
+        "currencyName": "Central African CFA Franc"
+      },
+      {
+        "code": "CH",
+        "name": "Switzerland",
+        "currency": "CHF",
+        "currencyName": "Swiss Franc"
+      },
+      {
+        "code": "CI",
+        "name": "Côte d’Ivoire",
+        "currency": "XOF",
+        "currencyName": "West African CFA Franc"
+      },
+      {
+        "code": "CK",
+        "name": "Cook Islands",
+        "currency": "NZD",
+        "currencyName": "New Zealand Dollar"
+      },
+      {
+        "code": "CL",
+        "name": "Chile",
+        "currency": "CLP",
+        "currencyName": "Chilean Peso"
+      },
+      {
+        "code": "CM",
+        "name": "Cameroon",
+        "currency": "XAF",
+        "currencyName": "Central African CFA Franc"
+      },
+      {
+        "code": "CN",
+        "name": "China",
+        "currency": "CNY",
+        "currencyName": "Chinese Yuan"
+      },
+      {
+        "code": "CO",
+        "name": "Colombia",
+        "currency": "COP",
+        "currencyName": "Colombian Peso"
+      },
+      {
+        "code": "CR",
+        "name": "Costa Rica",
+        "currency": "CRC",
+        "currencyName": "Costa Rican Colón"
+      },
+      {
+        "code": "CU",
+        "name": "Cuba",
+        "currency": "CUP",
+        "currencyName": "Cuban Peso"
+      },
+      {
+        "code": "CV",
+        "name": "Cabo Verde",
+        "currency": "CVE",
+        "currencyName": "Cape Verdean Escudo"
+      },
+      {
+        "code": "CW",
+        "name": "Curaçao",
+        "currency": "ANG",
+        "currencyName": "Netherlands Antillean Guilder"
+      },
+      {
+        "code": "CX",
+        "name": "Christmas Island",
+        "currency": "AUD",
+        "currencyName": "Australian Dollar"
+      },
+      {
+        "code": "CY",
+        "name": "Cyprus",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "CZ",
+        "name": "Czechia",
+        "currency": "CZK",
+        "currencyName": "Czech Koruna"
+      },
+      {
+        "code": "DE",
+        "name": "Germany",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "DJ",
+        "name": "Djibouti",
+        "currency": "DJF",
+        "currencyName": "Djiboutian Franc"
+      },
+      {
+        "code": "DK",
+        "name": "Denmark",
+        "currency": "DKK",
+        "currencyName": "Danish Krone"
+      },
+      {
+        "code": "DM",
+        "name": "Dominica",
+        "currency": "XCD",
+        "currencyName": "East Caribbean Dollar"
+      },
+      {
+        "code": "DO",
+        "name": "Dominican Republic",
+        "currency": "DOP",
+        "currencyName": "Dominican Peso"
+      },
+      {
+        "code": "DZ",
+        "name": "Algeria",
+        "currency": "DZD",
+        "currencyName": "Algerian Dinar"
+      },
+      {
+        "code": "EC",
+        "name": "Ecuador",
+        "currency": "USD",
+        "currencyName": "US Dollar"
+      },
+      {
+        "code": "EE",
+        "name": "Estonia",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "EG",
+        "name": "Egypt",
+        "currency": "EGP",
+        "currencyName": "Egyptian Pound"
+      },
+      {
+        "code": "ER",
+        "name": "Eritrea",
+        "currency": "ERN",
+        "currencyName": "Eritrean Nakfa"
+      },
+      {
+        "code": "ES",
+        "name": "Spain",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "ET",
+        "name": "Ethiopia",
+        "currency": "ETB",
+        "currencyName": "Ethiopian Birr"
+      },
+      {
+        "code": "FI",
+        "name": "Finland",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "FJ",
+        "name": "Fiji",
+        "currency": "FJD",
+        "currencyName": "Fijian Dollar"
+      },
+      {
+        "code": "FK",
+        "name": "Falkland Islands",
+        "currency": "FKP",
+        "currencyName": "Falkland Islands Pound"
+      },
+      {
+        "code": "FM",
+        "name": "Micronesia",
+        "currency": "USD",
+        "currencyName": "US Dollar"
+      },
+      {
+        "code": "FO",
+        "name": "Faroe Islands",
+        "currency": "DKK",
+        "currencyName": "Danish Krone"
+      },
+      {
+        "code": "FR",
+        "name": "France",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "GA",
+        "name": "Gabon",
+        "currency": "XAF",
+        "currencyName": "Central African CFA Franc"
+      },
+      {
+        "code": "GB",
+        "name": "United Kingdom",
+        "currency": "GBP",
+        "currencyName": "British Pound"
+      },
+      {
+        "code": "GD",
+        "name": "Grenada",
+        "currency": "XCD",
+        "currencyName": "East Caribbean Dollar"
+      },
+      {
+        "code": "GE",
+        "name": "Georgia",
+        "currency": "GEL",
+        "currencyName": "Georgian Lari"
+      },
+      {
+        "code": "GF",
+        "name": "French Guiana",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "GG",
+        "name": "Guernsey",
+        "currency": "GBP",
+        "currencyName": "British Pound"
+      },
+      {
+        "code": "GH",
+        "name": "Ghana",
+        "currency": "GHS",
+        "currencyName": "Ghanaian Cedi"
+      },
+      {
+        "code": "GI",
+        "name": "Gibraltar",
+        "currency": "GIP",
+        "currencyName": "Gibraltar Pound"
+      },
+      {
+        "code": "GL",
+        "name": "Greenland",
+        "currency": "DKK",
+        "currencyName": "Danish Krone"
+      },
+      {
+        "code": "GM",
+        "name": "Gambia",
+        "currency": "GMD",
+        "currencyName": "Gambian Dalasi"
+      },
+      {
+        "code": "GN",
+        "name": "Guinea",
+        "currency": "GNF",
+        "currencyName": "Guinean Franc"
+      },
+      {
+        "code": "GP",
+        "name": "Guadeloupe",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "GQ",
+        "name": "Equatorial Guinea",
+        "currency": "XAF",
+        "currencyName": "Central African CFA Franc"
+      },
+      {
+        "code": "GR",
+        "name": "Greece",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "GT",
+        "name": "Guatemala",
+        "currency": "GTQ",
+        "currencyName": "Guatemalan Quetzal"
+      },
+      {
+        "code": "GU",
+        "name": "Guam",
+        "currency": "USD",
+        "currencyName": "US Dollar"
+      },
+      {
+        "code": "GW",
+        "name": "Guinea-Bissau",
+        "currency": "XOF",
+        "currencyName": "West African CFA Franc"
+      },
+      {
+        "code": "GY",
+        "name": "Guyana",
+        "currency": "GYD",
+        "currencyName": "Guyanaese Dollar"
+      },
+      {
+        "code": "HK",
+        "name": "Hong Kong SAR",
+        "currency": "HKD",
+        "currencyName": "Hong Kong Dollar"
+      },
+      {
+        "code": "HN",
+        "name": "Honduras",
+        "currency": "HNL",
+        "currencyName": "Honduran Lempira"
+      },
+      {
+        "code": "HR",
+        "name": "Croatia",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "HT",
+        "name": "Haiti",
+        "currency": "HTG",
+        "currencyName": "Haitian Gourde"
+      },
+      {
+        "code": "HU",
+        "name": "Hungary",
+        "currency": "HUF",
+        "currencyName": "Hungarian Forint"
+      },
+      {
+        "code": "ID",
+        "name": "Indonesia",
+        "currency": "IDR",
+        "currencyName": "Indonesian Rupiah"
+      },
+      {
+        "code": "IE",
+        "name": "Ireland",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "IL",
+        "name": "Israel",
+        "currency": "ILS",
+        "currencyName": "Israeli New Shekel"
+      },
+      {
+        "code": "IM",
+        "name": "Isle of Man",
+        "currency": "GBP",
+        "currencyName": "British Pound"
+      },
+      {
+        "code": "IN",
+        "name": "India",
+        "currency": "INR",
+        "currencyName": "Indian Rupee"
+      },
+      {
+        "code": "IO",
+        "name": "British Indian Ocean Territory",
+        "currency": "USD",
+        "currencyName": "US Dollar"
+      },
+      {
+        "code": "IQ",
+        "name": "Iraq",
+        "currency": "IQD",
+        "currencyName": "Iraqi Dinar"
+      },
+      {
+        "code": "IR",
+        "name": "Iran",
+        "currency": "IRR",
+        "currencyName": "Iranian Rial"
+      },
+      {
+        "code": "IS",
+        "name": "Iceland",
+        "currency": "ISK",
+        "currencyName": "Icelandic Króna"
+      },
+      {
+        "code": "IT",
+        "name": "Italy",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "JE",
+        "name": "Jersey",
+        "currency": "GBP",
+        "currencyName": "British Pound"
+      },
+      {
+        "code": "JM",
+        "name": "Jamaica",
+        "currency": "JMD",
+        "currencyName": "Jamaican Dollar"
+      },
+      {
+        "code": "JO",
+        "name": "Jordan",
+        "currency": "JOD",
+        "currencyName": "Jordanian Dinar"
+      },
+      {
+        "code": "JP",
+        "name": "Japan",
+        "currency": "JPY",
+        "currencyName": "Japanese Yen"
+      },
+      {
+        "code": "KE",
+        "name": "Kenya",
+        "currency": "KES",
+        "currencyName": "Kenyan Shilling"
+      },
+      {
+        "code": "KG",
+        "name": "Kyrgyzstan",
+        "currency": "KGS",
+        "currencyName": "Kyrgystani Som"
+      },
+      {
+        "code": "KH",
+        "name": "Cambodia",
+        "currency": "KHR",
+        "currencyName": "Cambodian Riel"
+      },
+      {
+        "code": "KI",
+        "name": "Kiribati",
+        "currency": "AUD",
+        "currencyName": "Australian Dollar"
+      },
+      {
+        "code": "KM",
+        "name": "Comoros",
+        "currency": "KMF",
+        "currencyName": "Comorian Franc"
+      },
+      {
+        "code": "KN",
+        "name": "St. Kitts & Nevis",
+        "currency": "XCD",
+        "currencyName": "East Caribbean Dollar"
+      },
+      {
+        "code": "KP",
+        "name": "North Korea",
+        "currency": "KPW",
+        "currencyName": "North Korean Won"
+      },
+      {
+        "code": "KR",
+        "name": "Korea",
+        "currency": "KRW",
+        "currencyName": "South Korean Won"
+      },
+      {
+        "code": "KW",
+        "name": "Kuwait",
+        "currency": "KWD",
+        "currencyName": "Kuwaiti Dinar"
+      },
+      {
+        "code": "KY",
+        "name": "Cayman Islands",
+        "currency": "KYD",
+        "currencyName": "Cayman Islands Dollar"
+      },
+      {
+        "code": "KZ",
+        "name": "Kazakhstan",
+        "currency": "KZT",
+        "currencyName": "Kazakhstani Tenge"
+      },
+      {
+        "code": "LA",
+        "name": "Laos",
+        "currency": "LAK",
+        "currencyName": "Laotian Kip"
+      },
+      {
+        "code": "LB",
+        "name": "Lebanon",
+        "currency": "LBP",
+        "currencyName": "Lebanese Pound"
+      },
+      {
+        "code": "LC",
+        "name": "St. Lucia",
+        "currency": "XCD",
+        "currencyName": "East Caribbean Dollar"
+      },
+      {
+        "code": "LI",
+        "name": "Liechtenstein",
+        "currency": "CHF",
+        "currencyName": "Swiss Franc"
+      },
+      {
+        "code": "LK",
+        "name": "Sri Lanka",
+        "currency": "LKR",
+        "currencyName": "Sri Lankan Rupee"
+      },
+      {
+        "code": "LR",
+        "name": "Liberia",
+        "currency": "LRD",
+        "currencyName": "Liberian Dollar"
+      },
+      {
+        "code": "LS",
+        "name": "Lesotho",
+        "currency": "ZAR",
+        "currencyName": "South African Rand"
+      },
+      {
+        "code": "LT",
+        "name": "Lithuania",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "LU",
+        "name": "Luxembourg",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "LV",
+        "name": "Latvia",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "LY",
+        "name": "Libya",
+        "currency": "LYD",
+        "currencyName": "Libyan Dinar"
+      },
+      {
+        "code": "MA",
+        "name": "Morocco",
+        "currency": "MAD",
+        "currencyName": "Moroccan Dirham"
+      },
+      {
+        "code": "MC",
+        "name": "Monaco",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "MD",
+        "name": "Moldova",
+        "currency": "MDL",
+        "currencyName": "Moldovan Leu"
+      },
+      {
+        "code": "ME",
+        "name": "Montenegro",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "MF",
+        "name": "St. Martin",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "MG",
+        "name": "Madagascar",
+        "currency": "MGA",
+        "currencyName": "Malagasy Ariary"
+      },
+      {
+        "code": "MH",
+        "name": "Marshall Islands",
+        "currency": "USD",
+        "currencyName": "US Dollar"
+      },
+      {
+        "code": "MK",
+        "name": "North Macedonia",
+        "currency": "MKD",
+        "currencyName": "Macedonian Denar"
+      },
+      {
+        "code": "ML",
+        "name": "Mali",
+        "currency": "XOF",
+        "currencyName": "West African CFA Franc"
+      },
+      {
+        "code": "MM",
+        "name": "Myanmar",
+        "currency": "MMK",
+        "currencyName": "Myanmar Kyat"
+      },
+      {
+        "code": "MN",
+        "name": "Mongolia",
+        "currency": "MNT",
+        "currencyName": "Mongolian Tugrik"
+      },
+      {
+        "code": "MO",
+        "name": "Macao SAR",
+        "currency": "MOP",
+        "currencyName": "Macanese Pataca"
+      },
+      {
+        "code": "MP",
+        "name": "Northern Mariana Islands",
+        "currency": "USD",
+        "currencyName": "US Dollar"
+      },
+      {
+        "code": "MQ",
+        "name": "Martinique",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "MR",
+        "name": "Mauritania",
+        "currency": "MRU",
+        "currencyName": "Mauritanian Ouguiya"
+      },
+      {
+        "code": "MS",
+        "name": "Montserrat",
+        "currency": "XCD",
+        "currencyName": "East Caribbean Dollar"
+      },
+      {
+        "code": "MT",
+        "name": "Malta",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "MU",
+        "name": "Mauritius",
+        "currency": "MUR",
+        "currencyName": "Mauritian Rupee"
+      },
+      {
+        "code": "MV",
+        "name": "Maldives",
+        "currency": "MVR",
+        "currencyName": "Maldivian Rufiyaa"
+      },
+      {
+        "code": "MW",
+        "name": "Malawi",
+        "currency": "MWK",
+        "currencyName": "Malawian Kwacha"
+      },
+      {
+        "code": "MX",
+        "name": "Mexico",
+        "currency": "MXN",
+        "currencyName": "Mexican Peso"
+      },
+      {
+        "code": "MY",
+        "name": "Malaysia",
+        "currency": "MYR",
+        "currencyName": "Malaysian Ringgit"
+      },
+      {
+        "code": "MZ",
+        "name": "Mozambique",
+        "currency": "MZN",
+        "currencyName": "Mozambican Metical"
+      },
+      {
+        "code": "NA",
+        "name": "Namibia",
+        "currency": "NAD",
+        "currencyName": "Namibian Dollar"
+      },
+      {
+        "code": "NC",
+        "name": "New Caledonia",
+        "currency": "XPF",
+        "currencyName": "CFP Franc"
+      },
+      {
+        "code": "NE",
+        "name": "Niger",
+        "currency": "XOF",
+        "currencyName": "West African CFA Franc"
+      },
+      {
+        "code": "NF",
+        "name": "Norfolk Island",
+        "currency": "AUD",
+        "currencyName": "Australian Dollar"
+      },
+      {
+        "code": "NG",
+        "name": "Nigeria",
+        "currency": "NGN",
+        "currencyName": "Nigerian Naira"
+      },
+      {
+        "code": "NI",
+        "name": "Nicaragua",
+        "currency": "NIO",
+        "currencyName": "Nicaraguan Córdoba"
+      },
+      {
+        "code": "NL",
+        "name": "Netherlands",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "NO",
+        "name": "Norway",
+        "currency": "NOK",
+        "currencyName": "Norwegian Krone"
+      },
+      {
+        "code": "NP",
+        "name": "Nepal",
+        "currency": "NPR",
+        "currencyName": "Nepalese Rupee"
+      },
+      {
+        "code": "NR",
+        "name": "Nauru",
+        "currency": "AUD",
+        "currencyName": "Australian Dollar"
+      },
+      {
+        "code": "NU",
+        "name": "Niue",
+        "currency": "NZD",
+        "currencyName": "New Zealand Dollar"
+      },
+      {
+        "code": "NZ",
+        "name": "New Zealand",
+        "currency": "NZD",
+        "currencyName": "New Zealand Dollar"
+      },
+      {
+        "code": "OM",
+        "name": "Oman",
+        "currency": "OMR",
+        "currencyName": "Omani Rial"
+      },
+      {
+        "code": "PA",
+        "name": "Panama",
+        "currency": "PAB",
+        "currencyName": "Panamanian Balboa"
+      },
+      {
+        "code": "PE",
+        "name": "Peru",
+        "currency": "PEN",
+        "currencyName": "Peruvian Sol"
+      },
+      {
+        "code": "PF",
+        "name": "French Polynesia",
+        "currency": "XPF",
+        "currencyName": "CFP Franc"
+      },
+      {
+        "code": "PG",
+        "name": "Papua New Guinea",
+        "currency": "PGK",
+        "currencyName": "Papua New Guinean Kina"
+      },
+      {
+        "code": "PH",
+        "name": "Philippines",
+        "currency": "PHP",
+        "currencyName": "Philippine Peso"
+      },
+      {
+        "code": "PK",
+        "name": "Pakistan",
+        "currency": "PKR",
+        "currencyName": "Pakistani Rupee"
+      },
+      {
+        "code": "PL",
+        "name": "Poland",
+        "currency": "PLN",
+        "currencyName": "Polish Zloty"
+      },
+      {
+        "code": "PM",
+        "name": "St. Pierre & Miquelon",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "PN",
+        "name": "Pitcairn Islands",
+        "currency": "NZD",
+        "currencyName": "New Zealand Dollar"
+      },
+      {
+        "code": "PR",
+        "name": "Puerto Rico",
+        "currency": "USD",
+        "currencyName": "US Dollar"
+      },
+      {
+        "code": "PS",
+        "name": "Palestinian Authority",
+        "currency": "ILS",
+        "currencyName": "Israeli New Shekel"
+      },
+      {
+        "code": "PT",
+        "name": "Portugal",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "PW",
+        "name": "Palau",
+        "currency": "USD",
+        "currencyName": "US Dollar"
+      },
+      {
+        "code": "PY",
+        "name": "Paraguay",
+        "currency": "PYG",
+        "currencyName": "Paraguayan Guarani"
+      },
+      {
+        "code": "QA",
+        "name": "Qatar",
+        "currency": "QAR",
+        "currencyName": "Qatari Riyal"
+      },
+      {
+        "code": "RE",
+        "name": "Réunion",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "RO",
+        "name": "Romania",
+        "currency": "RON",
+        "currencyName": "Romanian Leu"
+      },
+      {
+        "code": "RS",
+        "name": "Serbia",
+        "currency": "RSD",
+        "currencyName": "Serbian Dinar"
+      },
+      {
+        "code": "RU",
+        "name": "Russia",
+        "currency": "RUB",
+        "currencyName": "Russian Ruble"
+      },
+      {
+        "code": "RW",
+        "name": "Rwanda",
+        "currency": "RWF",
+        "currencyName": "Rwandan Franc"
+      },
+      {
+        "code": "SA",
+        "name": "Saudi Arabia",
+        "currency": "SAR",
+        "currencyName": "Saudi Riyal"
+      },
+      {
+        "code": "SB",
+        "name": "Solomon Islands",
+        "currency": "SBD",
+        "currencyName": "Solomon Islands Dollar"
+      },
+      {
+        "code": "SC",
+        "name": "Seychelles",
+        "currency": "SCR",
+        "currencyName": "Seychellois Rupee"
+      },
+      {
+        "code": "SD",
+        "name": "Sudan",
+        "currency": "SDG",
+        "currencyName": "Sudanese Pound"
+      },
+      {
+        "code": "SE",
+        "name": "Sweden",
+        "currency": "SEK",
+        "currencyName": "Swedish Krona"
+      },
+      {
+        "code": "SG",
+        "name": "Singapore",
+        "currency": "SGD",
+        "currencyName": "Singapore Dollar"
+      },
+      {
+        "code": "SH",
+        "name": "St Helena, Ascension, Tristan da Cunha",
+        "currency": "SHP",
+        "currencyName": "St. Helena Pound"
+      },
+      {
+        "code": "SI",
+        "name": "Slovenia",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "SJ",
+        "name": "Svalbard & Jan Mayen",
+        "currency": "NOK",
+        "currencyName": "Norwegian Krone"
+      },
+      {
+        "code": "SK",
+        "name": "Slovakia",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "SL",
+        "name": "Sierra Leone",
+        "currency": "SLE",
+        "currencyName": "Sierra Leonean Leone"
+      },
+      {
+        "code": "SM",
+        "name": "San Marino",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "SN",
+        "name": "Senegal",
+        "currency": "XOF",
+        "currencyName": "West African CFA Franc"
+      },
+      {
+        "code": "SO",
+        "name": "Somalia",
+        "currency": "SOS",
+        "currencyName": "Somali Shilling"
+      },
+      {
+        "code": "SR",
+        "name": "Suriname",
+        "currency": "SRD",
+        "currencyName": "Surinamese Dollar"
+      },
+      {
+        "code": "SS",
+        "name": "South Sudan",
+        "currency": "SSP",
+        "currencyName": "South Sudanese Pound"
+      },
+      {
+        "code": "ST",
+        "name": "São Tomé & Príncipe",
+        "currency": "STN",
+        "currencyName": "São Tomé & Príncipe Dobra"
+      },
+      {
+        "code": "SV",
+        "name": "El Salvador",
+        "currency": "USD",
+        "currencyName": "US Dollar"
+      },
+      {
+        "code": "SX",
+        "name": "Sint Maarten",
+        "currency": "ANG",
+        "currencyName": "Netherlands Antillean Guilder"
+      },
+      {
+        "code": "SY",
+        "name": "Syria",
+        "currency": "SYP",
+        "currencyName": "Syrian Pound"
+      },
+      {
+        "code": "SZ",
+        "name": "Eswatini",
+        "currency": "SZL",
+        "currencyName": "Swazi Lilangeni"
+      },
+      {
+        "code": "TC",
+        "name": "Turks & Caicos Islands",
+        "currency": "USD",
+        "currencyName": "US Dollar"
+      },
+      {
+        "code": "TD",
+        "name": "Chad",
+        "currency": "XAF",
+        "currencyName": "Central African CFA Franc"
+      },
+      {
+        "code": "TG",
+        "name": "Togo",
+        "currency": "XOF",
+        "currencyName": "West African CFA Franc"
+      },
+      {
+        "code": "TH",
+        "name": "Thailand",
+        "currency": "THB",
+        "currencyName": "Thai Baht"
+      },
+      {
+        "code": "TJ",
+        "name": "Tajikistan",
+        "currency": "TJS",
+        "currencyName": "Tajikistani Somoni"
+      },
+      {
+        "code": "TK",
+        "name": "Tokelau",
+        "currency": "NZD",
+        "currencyName": "New Zealand Dollar"
+      },
+      {
+        "code": "TL",
+        "name": "Timor-Leste",
+        "currency": "USD",
+        "currencyName": "US Dollar"
+      },
+      {
+        "code": "TM",
+        "name": "Turkmenistan",
+        "currency": "TMT",
+        "currencyName": "Turkmenistani Manat"
+      },
+      {
+        "code": "TN",
+        "name": "Tunisia",
+        "currency": "TND",
+        "currencyName": "Tunisian Dinar"
+      },
+      {
+        "code": "TO",
+        "name": "Tonga",
+        "currency": "TOP",
+        "currencyName": "Tongan Paʻanga"
+      },
+      {
+        "code": "TR",
+        "name": "Türkiye",
+        "currency": "TRY",
+        "currencyName": "Turkish Lira"
+      },
+      {
+        "code": "TT",
+        "name": "Trinidad & Tobago",
+        "currency": "TTD",
+        "currencyName": "Trinidad & Tobago Dollar"
+      },
+      {
+        "code": "TV",
+        "name": "Tuvalu",
+        "currency": "AUD",
+        "currencyName": "Australian Dollar"
+      },
+      {
+        "code": "TW",
+        "name": "Taiwan",
+        "currency": "TWD",
+        "currencyName": "New Taiwan Dollar"
+      },
+      {
+        "code": "TZ",
+        "name": "Tanzania",
+        "currency": "TZS",
+        "currencyName": "Tanzanian Shilling"
+      },
+      {
+        "code": "UA",
+        "name": "Ukraine",
+        "currency": "UAH",
+        "currencyName": "Ukrainian Hryvnia"
+      },
+      {
+        "code": "UG",
+        "name": "Uganda",
+        "currency": "UGX",
+        "currencyName": "Ugandan Shilling"
+      },
+      {
+        "code": "UM",
+        "name": "U.S. Outlying Islands",
+        "currency": "USD",
+        "currencyName": "US Dollar"
+      },
+      {
+        "code": "US",
+        "name": "United States",
+        "currency": "USD",
+        "currencyName": "US Dollar"
+      },
+      {
+        "code": "UY",
+        "name": "Uruguay",
+        "currency": "UYU",
+        "currencyName": "Uruguayan Peso"
+      },
+      {
+        "code": "UZ",
+        "name": "Uzbekistan",
+        "currency": "UZS",
+        "currencyName": "Uzbekistani Som"
+      },
+      {
+        "code": "VA",
+        "name": "Vatican City",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "VC",
+        "name": "St. Vincent & Grenadines",
+        "currency": "XCD",
+        "currencyName": "East Caribbean Dollar"
+      },
+      {
+        "code": "VE",
+        "name": "Venezuela",
+        "currency": "VES",
+        "currencyName": "Venezuelan Bolívar"
+      },
+      {
+        "code": "VG",
+        "name": "British Virgin Islands",
+        "currency": "USD",
+        "currencyName": "US Dollar"
+      },
+      {
+        "code": "VI",
+        "name": "U.S. Virgin Islands",
+        "currency": "USD",
+        "currencyName": "US Dollar"
+      },
+      {
+        "code": "VN",
+        "name": "Vietnam",
+        "currency": "VND",
+        "currencyName": "Vietnamese Dong"
+      },
+      {
+        "code": "VU",
+        "name": "Vanuatu",
+        "currency": "VUV",
+        "currencyName": "Vanuatu Vatu"
+      },
+      {
+        "code": "WF",
+        "name": "Wallis & Futuna",
+        "currency": "XPF",
+        "currencyName": "CFP Franc"
+      },
+      {
+        "code": "WS",
+        "name": "Samoa",
+        "currency": "WST",
+        "currencyName": "Samoan Tala"
+      },
+      {
+        "code": "XK",
+        "name": "Kosovo",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "YE",
+        "name": "Yemen",
+        "currency": "YER",
+        "currencyName": "Yemeni Rial"
+      },
+      {
+        "code": "YT",
+        "name": "Mayotte",
+        "currency": "EUR",
+        "currencyName": "Euro"
+      },
+      {
+        "code": "ZA",
+        "name": "South Africa",
+        "currency": "ZAR",
+        "currencyName": "South African Rand"
+      },
+      {
+        "code": "ZM",
+        "name": "Zambia",
+        "currency": "ZMW",
+        "currencyName": "Zambian Kwacha"
+      },
+      {
+        "code": "ZW",
+        "name": "Zimbabwe",
+        "currency": "USD",
+        "currencyName": "US Dollar"
+      }
+    ],
+    "currencies": {
+      "EUR": "Euro",
+      "AED": "UAE Dirham",
+      "AFN": "Afghan Afghani",
+      "XCD": "East Caribbean Dollar",
+      "ALL": "Albanian Lek",
+      "AMD": "Armenian Dram",
+      "AOA": "Angolan Kwanza",
+      "ARS": "Argentine Peso",
+      "USD": "US Dollar",
+      "AUD": "Australian Dollar",
+      "AWG": "Aruban Florin",
+      "AZN": "Azerbaijani Manat",
+      "BAM": "Bosnia-Herzegovina Convertible Mark",
+      "BBD": "Barbadian Dollar",
+      "BDT": "Bangladeshi Taka",
+      "XOF": "West African CFA Franc",
+      "BGN": "Bulgarian Lev",
+      "BHD": "Bahraini Dinar",
+      "BIF": "Burundian Franc",
+      "BMD": "Bermudan Dollar",
+      "BND": "Brunei Dollar",
+      "BOB": "Bolivian Boliviano",
+      "BRL": "Brazilian Real",
+      "BSD": "Bahamian Dollar",
+      "BTN": "Bhutanese Ngultrum",
+      "BWP": "Botswanan Pula",
+      "BYN": "Belarusian Ruble",
+      "BZD": "Belize Dollar",
+      "CAD": "Canadian Dollar",
+      "CDF": "Congolese Franc",
+      "XAF": "Central African CFA Franc",
+      "CHF": "Swiss Franc",
+      "NZD": "New Zealand Dollar",
+      "CLP": "Chilean Peso",
+      "CNY": "Chinese Yuan",
+      "COP": "Colombian Peso",
+      "CRC": "Costa Rican Colón",
+      "CUP": "Cuban Peso",
+      "CVE": "Cape Verdean Escudo",
+      "ANG": "Netherlands Antillean Guilder",
+      "CZK": "Czech Koruna",
+      "DJF": "Djiboutian Franc",
+      "DKK": "Danish Krone",
+      "DOP": "Dominican Peso",
+      "DZD": "Algerian Dinar",
+      "EGP": "Egyptian Pound",
+      "ERN": "Eritrean Nakfa",
+      "ETB": "Ethiopian Birr",
+      "FJD": "Fijian Dollar",
+      "FKP": "Falkland Islands Pound",
+      "GBP": "British Pound",
+      "GEL": "Georgian Lari",
+      "GHS": "Ghanaian Cedi",
+      "GIP": "Gibraltar Pound",
+      "GMD": "Gambian Dalasi",
+      "GNF": "Guinean Franc",
+      "GTQ": "Guatemalan Quetzal",
+      "GYD": "Guyanaese Dollar",
+      "HKD": "Hong Kong Dollar",
+      "HNL": "Honduran Lempira",
+      "HTG": "Haitian Gourde",
+      "HUF": "Hungarian Forint",
+      "IDR": "Indonesian Rupiah",
+      "ILS": "Israeli New Shekel",
+      "INR": "Indian Rupee",
+      "IQD": "Iraqi Dinar",
+      "IRR": "Iranian Rial",
+      "ISK": "Icelandic Króna",
+      "JMD": "Jamaican Dollar",
+      "JOD": "Jordanian Dinar",
+      "JPY": "Japanese Yen",
+      "KES": "Kenyan Shilling",
+      "KGS": "Kyrgystani Som",
+      "KHR": "Cambodian Riel",
+      "KMF": "Comorian Franc",
+      "KPW": "North Korean Won",
+      "KRW": "South Korean Won",
+      "KWD": "Kuwaiti Dinar",
+      "KYD": "Cayman Islands Dollar",
+      "KZT": "Kazakhstani Tenge",
+      "LAK": "Laotian Kip",
+      "LBP": "Lebanese Pound",
+      "LKR": "Sri Lankan Rupee",
+      "LRD": "Liberian Dollar",
+      "ZAR": "South African Rand",
+      "LYD": "Libyan Dinar",
+      "MAD": "Moroccan Dirham",
+      "MDL": "Moldovan Leu",
+      "MGA": "Malagasy Ariary",
+      "MKD": "Macedonian Denar",
+      "MMK": "Myanmar Kyat",
+      "MNT": "Mongolian Tugrik",
+      "MOP": "Macanese Pataca",
+      "MRU": "Mauritanian Ouguiya",
+      "MUR": "Mauritian Rupee",
+      "MVR": "Maldivian Rufiyaa",
+      "MWK": "Malawian Kwacha",
+      "MXN": "Mexican Peso",
+      "MYR": "Malaysian Ringgit",
+      "MZN": "Mozambican Metical",
+      "NAD": "Namibian Dollar",
+      "XPF": "CFP Franc",
+      "NGN": "Nigerian Naira",
+      "NIO": "Nicaraguan Córdoba",
+      "NOK": "Norwegian Krone",
+      "NPR": "Nepalese Rupee",
+      "OMR": "Omani Rial",
+      "PAB": "Panamanian Balboa",
+      "PEN": "Peruvian Sol",
+      "PGK": "Papua New Guinean Kina",
+      "PHP": "Philippine Peso",
+      "PKR": "Pakistani Rupee",
+      "PLN": "Polish Zloty",
+      "PYG": "Paraguayan Guarani",
+      "QAR": "Qatari Riyal",
+      "RON": "Romanian Leu",
+      "RSD": "Serbian Dinar",
+      "RUB": "Russian Ruble",
+      "RWF": "Rwandan Franc",
+      "SAR": "Saudi Riyal",
+      "SBD": "Solomon Islands Dollar",
+      "SCR": "Seychellois Rupee",
+      "SDG": "Sudanese Pound",
+      "SEK": "Swedish Krona",
+      "SGD": "Singapore Dollar",
+      "SHP": "St. Helena Pound",
+      "SLE": "Sierra Leonean Leone",
+      "SOS": "Somali Shilling",
+      "SRD": "Surinamese Dollar",
+      "SSP": "South Sudanese Pound",
+      "STN": "São Tomé & Príncipe Dobra",
+      "SYP": "Syrian Pound",
+      "SZL": "Swazi Lilangeni",
+      "THB": "Thai Baht",
+      "TJS": "Tajikistani Somoni",
+      "TMT": "Turkmenistani Manat",
+      "TND": "Tunisian Dinar",
+      "TOP": "Tongan Paʻanga",
+      "TRY": "Turkish Lira",
+      "TTD": "Trinidad & Tobago Dollar",
+      "TWD": "New Taiwan Dollar",
+      "TZS": "Tanzanian Shilling",
+      "UAH": "Ukrainian Hryvnia",
+      "UGX": "Ugandan Shilling",
+      "UYU": "Uruguayan Peso",
+      "UZS": "Uzbekistani Som",
+      "VES": "Venezuelan Bolívar",
+      "VND": "Vietnamese Dong",
+      "VUV": "Vanuatu Vatu",
+      "WST": "Samoan Tala",
+      "YER": "Yemeni Rial",
+      "ZMW": "Zambian Kwacha"
+    },
+    "languages": {
+      "en": "English",
+      "ar": "العربية"
+    },
+    "timeZones": [
+      "UTC",
+      "Asia/Riyadh",
+      "Asia/Dubai",
+      "Asia/Amman",
+      "Asia/Kuwait",
+      "Asia/Qatar",
+      "Europe/London",
+      "Europe/Paris",
+      "Europe/Berlin",
+      "Europe/Madrid",
+      "America/New_York",
+      "America/Los_Angeles",
+      "America/Toronto",
+      "Australia/Sydney",
+      "Asia/Tokyo",
+      "Asia/Singapore",
+      "Africa/Cairo",
+      "Africa/Johannesburg",
+      "America/Sao_Paulo",
+      "Asia/Kolkata",
+      "Asia/Manila",
+      "Pacific/Auckland"
+    ],
+    "defaults": {
+      "country": "SA",
+      "currency": "SAR",
+      "locale": "en",
+      "timeZone": "UTC",
+      "dateFormat": "yyyy-MM-dd",
+      "measurement": "sqm",
+      "phoneCode": "+966",
+      "notifications": true
+    }
+  },
+  "globalRevision": 3
+}

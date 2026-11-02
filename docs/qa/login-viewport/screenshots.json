@@ -1,0 +1,62 @@
+[
+  {
+    "file": "flutter-1366x768.jpg",
+    "width": 1366,
+    "height": 768,
+    "format": "JPEG"
+  },
+  {
+    "file": "flutter-1920x1080.jpg",
+    "width": 1920,
+    "height": 1080,
+    "format": "JPEG"
+  },
+  {
+    "file": "flutter-390x844.jpg",
+    "width": 390,
+    "height": 844,
+    "format": "JPEG"
+  },
+  {
+    "file": "flutter-430x932.jpg",
+    "width": 430,
+    "height": 932,
+    "format": "JPEG"
+  },
+  {
+    "file": "flutter-ar-1366x768.jpg",
+    "width": 1366,
+    "height": 768,
+    "format": "JPEG"
+  },
+  {
+    "file": "web-1366x768.jpg",
+    "width": 1366,
+    "height": 768,
+    "format": "JPEG"
+  },
+  {
+    "file": "web-1920x1080.jpg",
+    "width": 1920,
+    "height": 1080,
+    "format": "JPEG"
+  },
+  {
+    "file": "web-390x844.jpg",
+    "width": 390,
+    "height": 844,
+    "format": "JPEG"
+  },
+  {
+    "file": "web-430x932.jpg",
+    "width": 430,
+    "height": 932,
+    "format": "JPEG"
+  },
+  {
+    "file": "web-ar-1366x768.jpg",
+    "width": 1366,
+    "height": 768,
+    "format": "JPEG"
+  }
+]

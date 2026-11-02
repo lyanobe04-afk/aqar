@@ -22,8 +22,8 @@ class ManagerFrontendTest extends TestCase
         });
 
         $response = $this->get($path)->assertOk()
-            ->assertSee('UI demonstration')
-            ->assertSee('Changes are not saved')
+            ->assertSee('demo-config')
+            ->assertSee('demo-app.js')
             ->assertDontSee('cdn.tailwindcss.com');
         $html = $response->getContent();
         $this->assertSame(1, substr_count($html, 'class="manager-sidebar"'));
@@ -43,7 +43,7 @@ class ManagerFrontendTest extends TestCase
     public function test_review_does_not_claim_a_property_was_saved(): void
     {
         $this->get(route('manager.add-property-6'))
-            ->assertOk()->assertSee('No property has been saved')
+            ->assertOk()->assertSee('No real transactions')
             ->assertDontSee('has been added to your property portfolio');
     }
 }

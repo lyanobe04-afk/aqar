@@ -1,11 +1,11 @@
 {
-  "name": "Aqar Property Portal · Demo",
-  "short_name": "Aqar Demo",
+  "name": "Aqar Property Portal",
+  "short_name": "Aqar",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#F4F6F9",
   "theme_color": "#1F4E78",
-  "description": "Static Aqar mobile frontend preview.",
+  "description": "Your properties. One clear view.",
   "orientation": "portrait-primary",
   "prefer_related_applications": false,
   "icons": [

@@ -1,0 +1,43 @@
+/* Login only: no fixed content height or clipped form overflow. */
+body[data-screen="login"]{background:#fff}
+body[data-screen="login"] .manager-header{display:none}
+body[data-screen="login"] .manager-content{max-width:none;margin:0;padding:0}
+.aqar-login-layout{grid-template-columns:55% 45%;min-height:100svh;border:0;border-radius:0;box-shadow:none;overflow:visible}
+.aqar-login-story{min-height:100%;padding:0;border-radius:0;isolation:isolate;overflow:hidden;background:#d7d7ce}
+.aqar-login-story:before{display:none}
+.aqar-login-story:after{background:linear-gradient(180deg,transparent 35%,rgba(15,41,66,.10) 52%,rgba(15,41,66,.78) 100%);z-index:0;pointer-events:none}
+.login-property-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.login-image-copy{position:relative;z-index:1;margin-top:auto;padding:clamp(32px,4vw,76px);padding-top:220px;color:#fff}
+.login-image-copy .auth-eyebrow{color:#fff;font-size:10px;letter-spacing:2.2px;margin-bottom:20px}
+.login-image-copy h2{font-size:clamp(34px,3vw,56px);font-weight:500;letter-spacing:-1.4px;line-height:1.15;margin:0 0 20px}
+.login-image-copy p{font-size:14px;line-height:1.7;color:#eef2f5;max-width:370px;margin:0 0 30px}
+.login-location{display:inline-block;padding:9px 14px;border:1px solid #ffffff50;border-radius:30px;font-size:11px;backdrop-filter:blur(5px);background:#ffffff0c}
+.aqar-login-form{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto 1fr auto;justify-content:stretch;align-items:stretch;min-height:100svh;box-sizing:border-box;padding:28px clamp(30px,4vw,80px) 24px;gap:28px;background:#fff}
+.login-topline{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.login-wordmark{display:inline-flex;gap:12px;align-items:baseline;color:#0f2942;font-size:28px;font-weight:700;letter-spacing:-1px;text-decoration:none}
+.login-wordmark span{font-family:'IBM Plex Sans Arabic',sans-serif;color:#2e7d32;font-size:21px;font-weight:500;letter-spacing:0}
+.login-topline .demo-button{border:1px solid #e4e9ee;background:#fff;color:#526172;padding:8px 12px;box-shadow:none;font-size:11px;font-weight:500}
+.login-form-inner{align-self:center;justify-self:center;width:100%;max-width:390px;padding:14px 0}
+.login-form-inner>.auth-eyebrow{font-size:9px;letter-spacing:1.8px;color:#67816f;margin-bottom:14px}
+.aqar-login-form .demo-title{font-size:34px;letter-spacing:-1px;line-height:1.2;margin-bottom:10px}
+.aqar-login-form .demo-subtitle{font-size:13px;line-height:1.6;margin-bottom:30px;color:#73808f}
+.login-fields{gap:20px}
+.login-fields label{font-size:12px;gap:8px;color:#33475b}
+.login-fields input{min-height:48px;border:1px solid #dce4eb;border-radius:8px;padding:13px 14px;background:#fbfcfd;font-size:14px}
+.login-fields input:focus{outline:3px solid #1f4e7812;border-color:#1f4e78}
+.login-fields .password-field input{padding-inline-end:62px}
+.login-fields .password-field button{color:#64788b;font-weight:500}
+.login-fields input[type=checkbox]{min-height:0;width:16px;height:16px;accent-color:#1f4e78}
+.login-options{font-size:11px;gap:12px}
+.login-options .check-label{font-size:11px}
+.login-fields>button{min-height:48px;border-radius:8px;background:#1f4e78;font-size:13px;box-shadow:0 3px 7px #1f4e7810}
+.login-fields>button:hover{background:#0f2942}
+.login-register{font-size:12px;padding:2px 0;color:#73808f}
+.preview-access{margin-top:23px;padding-top:17px;border-top:1px solid #edf0f3;color:#7b8895;font-size:11px}
+.preview-access summary{text-align:center;min-height:20px}
+.preview-access p{font-size:11px;line-height:1.5}
+.preview-access .demo-button{font-size:11px}
+.login-footer{margin:0;display:flex;justify-content:space-between;gap:16px;font-size:9px;line-height:1.5;color:#87939f}
+[dir="rtl"] .login-image-copy h2,[dir="rtl"] .aqar-login-form .demo-title{letter-spacing:0}
+@media(min-width:801px) and (max-height:700px){.aqar-login-form{padding-top:20px;padding-bottom:18px;gap:16px}.login-form-inner{padding:0}.login-fields{gap:16px}.aqar-login-form .demo-subtitle{margin-bottom:22px}.preview-access{margin-top:18px;padding-top:13px}.login-image-copy{padding-top:160px}}
+@media(max-width:800px){.aqar-login-layout{display:block;min-height:100svh}.aqar-login-story{min-height:0;height:210px}.aqar-login-story:after{background:linear-gradient(180deg,transparent 0%,rgba(15,41,66,.12) 25%,rgba(15,41,66,.78) 100%)}.login-property-photo{object-position:center 57%}.login-image-copy{padding:24px;position:absolute;bottom:0}.login-image-copy .auth-eyebrow{font-size:8px;margin-bottom:10px;letter-spacing:1.5px}.login-image-copy h2{font-size:29px;line-height:1.14;letter-spacing:-.6px;margin:0}.login-image-copy p,.login-location{display:none}.aqar-login-form{min-height:0;padding:23px 26px 20px;gap:24px}.login-wordmark{font-size:25px}.login-wordmark span{font-size:19px}.login-form-inner{padding:0;max-width:420px}.login-form-inner>.auth-eyebrow{display:none}.aqar-login-form .demo-title{font-size:29px}.aqar-login-form .demo-subtitle{margin-bottom:24px;font-size:12px}.login-fields{gap:18px}.login-footer{font-size:8px}.preview-access{margin-top:22px}}

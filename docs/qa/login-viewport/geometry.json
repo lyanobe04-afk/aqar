@@ -1,0 +1,126 @@
+{
+  "web": [
+    {
+      "footerBottom": 744,
+      "formWidth": 614.875,
+      "height": 768,
+      "imageWidth": 751.5125122070312,
+      "pageHeight": 768,
+      "pageWidth": 1366,
+      "photoLoaded": true,
+      "previewBottom": 656.0499992370605,
+      "scale": 1,
+      "width": 1366
+    },
+    {
+      "footerBottom": 1056,
+      "formWidth": 864,
+      "height": 1080,
+      "imageWidth": 1056,
+      "pageHeight": 1080,
+      "pageWidth": 1920,
+      "photoLoaded": true,
+      "previewBottom": 812.0499992370605,
+      "scale": 1,
+      "width": 1920
+    },
+    {
+      "footerBottom": 792,
+      "formWidth": 390.3999938964844,
+      "height": 844,
+      "imageWidth": 390.3999938964844,
+      "pageHeight": 844,
+      "pageWidth": 390,
+      "photoLoaded": true,
+      "previewBottom": 756.0000114440918,
+      "scale": 1,
+      "width": 390
+    },
+    {
+      "footerBottom": 792,
+      "formWidth": 430.3999938964844,
+      "height": 932,
+      "imageWidth": 430.3999938964844,
+      "pageHeight": 932,
+      "pageWidth": 430,
+      "photoLoaded": true,
+      "previewBottom": 756.0000114440918,
+      "scale": 1,
+      "width": 430
+    }
+  ],
+  "flutter": [
+    {
+      "height": 768,
+      "pageHeight": 768,
+      "pageWidth": 1366,
+      "scale": 1,
+      "width": 1366,
+      "preview": {
+        "bottom": 625.5,
+        "x": 863.9600830078125,
+        "y": 577.5
+      },
+      "photo": {
+        "height": 768,
+        "width": 751.5125122070312,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "height": 1080,
+      "pageHeight": 1080,
+      "pageWidth": 1920,
+      "scale": 1,
+      "width": 1920,
+      "preview": {
+        "bottom": 781.5,
+        "x": 1293,
+        "y": 733.5
+      },
+      "photo": {
+        "height": 1080,
+        "width": 1056,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "height": 844,
+      "pageHeight": 844,
+      "pageWidth": 390,
+      "scale": 1,
+      "width": 390,
+      "preview": {
+        "bottom": 717,
+        "x": 26,
+        "y": 669
+      },
+      "photo": {
+        "height": 210,
+        "width": 390.3999938964844,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "height": 932,
+      "pageHeight": 932,
+      "pageWidth": 430,
+      "scale": 1,
+      "width": 430,
+      "preview": {
+        "bottom": 717,
+        "x": 26,
+        "y": 669
+      },
+      "photo": {
+        "height": 210,
+        "width": 430.3999938964844,
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

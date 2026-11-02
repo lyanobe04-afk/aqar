@@ -44,3 +44,6 @@ Desktop.ini
 **/.vscode/
 __pycache__/
 *.pyc
+
+# Temporary QA exports, local backups and command output.
+/tmp/

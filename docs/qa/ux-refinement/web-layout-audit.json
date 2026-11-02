@@ -1,0 +1,650 @@
+[
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/handover",
+    "width": 390
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/",
+    "width": 390
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/properties",
+    "width": 390
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/units",
+    "width": 390
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/owners",
+    "width": 390
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/tenants",
+    "width": 390
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/bookings",
+    "width": 390
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/contracts",
+    "width": 390
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/payments",
+    "width": 390
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/receivables",
+    "width": 390
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/maintenance",
+    "width": 390
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/furniture",
+    "width": 390
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/documents",
+    "width": 390
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/reports",
+    "width": 390
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/settings",
+    "width": 390
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/handover",
+    "width": 768
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/",
+    "width": 768
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/properties",
+    "width": 768
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/units",
+    "width": 768
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/tenants",
+    "width": 768
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/payments",
+    "width": 768
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/receivables",
+    "width": 768
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/maintenance",
+    "width": 768
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/furniture",
+    "width": 768
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/documents",
+    "width": 768
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/settings",
+    "width": 768
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/owners",
+    "width": 768
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/bookings",
+    "width": 768
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/contracts",
+    "width": 768
+  },
+  {
+    "role": "manager",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/reports",
+    "width": 768
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/owner/handover",
+    "width": 430
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/owner",
+    "width": 430
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/owner/properties",
+    "width": 430
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/owner/occupancy",
+    "width": 430
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/owner/income",
+    "width": 430
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/owner/expenses",
+    "width": 430
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/owner/profit",
+    "width": 430
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/owner/reports",
+    "width": 430
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/owner/maintenance",
+    "width": 430
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/owner/furniture",
+    "width": 430
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/owner/documents",
+    "width": 430
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/owner/settings",
+    "width": 430
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/owner/handover",
+    "width": 1366
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/owner",
+    "width": 1366
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/owner/properties",
+    "width": 1366
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/owner/occupancy",
+    "width": 1366
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/owner/income",
+    "width": 1366
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/owner/expenses",
+    "width": 1366
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/owner/profit",
+    "width": 1366
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/owner/reports",
+    "width": 1366
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/owner/maintenance",
+    "width": 1366
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/owner/furniture",
+    "width": 1366
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/owner/documents",
+    "width": 1366
+  },
+  {
+    "role": "owner",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/owner/settings",
+    "width": 1366
+  },
+  {
+    "role": "tenant",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/tenant/handover",
+    "width": 1366
+  },
+  {
+    "role": "tenant",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/tenant",
+    "width": 1366
+  },
+  {
+    "role": "tenant",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/tenant/browse",
+    "width": 1366
+  },
+  {
+    "role": "tenant",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/tenant/bookings",
+    "width": 1366
+  },
+  {
+    "role": "tenant",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/tenant/contracts",
+    "width": 1366
+  },
+  {
+    "role": "tenant",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/tenant/payments",
+    "width": 1366
+  },
+  {
+    "role": "tenant",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/tenant/maintenance",
+    "width": 1366
+  },
+  {
+    "role": "tenant",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/tenant/inspection",
+    "width": 1366
+  },
+  {
+    "role": "tenant",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "en",
+    "overflow": false,
+    "url": "/tenant/settings",
+    "width": 1366
+  },
+  {
+    "role": "tenant",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/tenant/handover",
+    "width": 390
+  },
+  {
+    "role": "tenant",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/tenant",
+    "width": 390
+  },
+  {
+    "role": "tenant",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/tenant/browse",
+    "width": 390
+  },
+  {
+    "role": "tenant",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/tenant/bookings",
+    "width": 390
+  },
+  {
+    "role": "tenant",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/tenant/contracts",
+    "width": 390
+  },
+  {
+    "role": "tenant",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/tenant/payments",
+    "width": 390
+  },
+  {
+    "role": "tenant",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/tenant/maintenance",
+    "width": 390
+  },
+  {
+    "role": "tenant",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/tenant/inspection",
+    "width": 390
+  },
+  {
+    "role": "tenant",
+    "brokenImages": 0,
+    "h1": 1,
+    "lang": "ar",
+    "overflow": false,
+    "url": "/tenant/settings",
+    "width": 390
+  }
+]
