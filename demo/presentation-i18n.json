@@ -48,5 +48,19 @@
   "Legacy property inventory remains unchanged.": "جرد العقار السابق محفوظ دون تغيير.",
   "Contract": "العقد",
   "Confirmed": "مؤكد",
-  "In progress": "قيد التنفيذ"
+  "In progress": "قيد التنفيذ",
+  "Account menu": "قائمة الحساب",
+  "View profile": "عرض الملف الشخصي",
+  "Log out": "تسجيل الخروج",
+  "View all notifications": "عرض جميع الإشعارات",
+  "No notifications yet": "لا توجد إشعارات بعد",
+  "Your latest booking activity": "أحدث الحجوزات في مساحتك",
+  "Your portfolio at a glance": "لمحة سريعة عن محفظتك",
+  "No bookings yet": "لا توجد حجوزات بعد",
+  "New bookings will appear here.": "ستظهر الحجوزات الجديدة هنا.",
+  "Choose the workspace that fits your role.": "اختر مساحة العمل المناسبة لدورك.",
+  "Properties, bookings and handovers": "العقارات والحجوزات والاستلام والتسليم",
+  "Portfolio, income and approvals": "المحفظة والإيرادات والموافقات",
+  "Bookings, payments and support": "الحجوزات والمدفوعات والدعم",
+  "Account setup": "إعداد الحساب"
 }

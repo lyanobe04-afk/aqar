@@ -389,7 +389,7 @@ extension _AccountScreens on _InteractivePageState {
             field(values, 'phone', 'Phone', required: false),
             field(values, 'phoneCode', 'Phone country code'),
             field(values, 'country', 'Country', choices: countryChoices),
-            action('Save demo profile', () {
+            action('Save profile', () {
               if (formKey.currentState!.validate()) {
                 run(() async {
                   await s.profile(
@@ -503,7 +503,7 @@ extension _AccountScreens on _InteractivePageState {
             onChanged: (v) => redraw(() => values['notifications'] = v),
           ),
           action(
-            'Save demo settings',
+            'Save settings',
             () {
               if (formKey.currentState!.validate()) {
                 run(() => s.settings(preferences: {...values}));

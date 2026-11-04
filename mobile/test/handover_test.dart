@@ -1,3 +1,5 @@
+import 'helpers/pump_ui.dart';
+
 import 'dart:io';
 import 'dart:convert';
 
@@ -10,6 +12,7 @@ import 'package:aqar_mobile/demo/services/inspection_pdf.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
+
   late DemoStore s;
   late Record seed, translations;
   late String saved;
@@ -223,17 +226,17 @@ void main() {
           monitorSession: false,
         ),
       );
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       await tester.ensureVisible(find.text('Continue'));
       await tester.tap(find.text('Continue'));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       await tester.tap(find.text('Add unit item'));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       await tester.tap(find.text('Cancel'));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       expect(s.all('unitInventory'), isEmpty);
       await tester.tap(find.text('Add unit item'));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       await tester.enterText(
         find.widgetWithText(TextFormField, 'Room'),
         'Living room',
@@ -243,15 +246,15 @@ void main() {
         'Chair',
       );
       await tester.tap(find.text('Save'));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       expect(s.all('unitInventory').length, 1);
       await tester.ensureVisible(find.text('Continue'));
       await tester.tap(find.text('Continue'));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       await tester.tap(find.text('Start paired inspection'));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       await tester.tap(find.text('Save'));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       expect(s.handoverList().length, 1);
       expect(tester.takeException(), isNull);
     },

@@ -1,3 +1,5 @@
+import 'helpers/pump_ui.dart';
+
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -8,6 +10,7 @@ import 'package:aqar_mobile/demo/interactive_app.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
+
   late Record seed, translations;
   setUpAll(() async {
     seed = jsonDecode(
@@ -52,7 +55,7 @@ void main() {
           .first,
       maxScrolls: 50,
     );
-    await tester.pumpAndSettle();
+    await pumpUi(tester);
   }
 
   final paths = {
@@ -122,13 +125,13 @@ void main() {
         await size(tester, 390);
         final s = await store(entry.key);
         await tester.pumpWidget(app(s, path));
-        await tester.pumpAndSettle();
+        await pumpUi(tester);
         expect(find.textContaining('Interactive demo'), findsNothing);
         expect(find.text('Screen unavailable'), findsNothing);
         expect(tester.takeException(), isNull);
         for (var i = 0; i < 3; i++) {
           await tester.drag(find.byType(ListView).last, const Offset(0, -800));
-          await tester.pumpAndSettle();
+          await pumpUi(tester);
           expect(tester.takeException(), isNull);
         }
       });
@@ -147,7 +150,7 @@ void main() {
     testWidgets('public $path renders', (tester) async {
       await size(tester, 390);
       await tester.pumpWidget(app(await store(), path));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       expect(tester.takeException(), isNull);
       expect(find.textContaining('Interactive demo'), findsNothing);
     });
@@ -167,11 +170,11 @@ void main() {
       ) async {
         await size(tester, width);
         await tester.pumpWidget(app(await store(scenario.$1), scenario.$2));
-        await tester.pumpAndSettle();
+        await pumpUi(tester);
         expect(tester.takeException(), isNull);
         for (var i = 0; i < 2; i++) {
           await tester.drag(find.byType(ListView).last, const Offset(0, -900));
-          await tester.pumpAndSettle();
+          await pumpUi(tester);
           expect(tester.takeException(), isNull);
         }
       });
@@ -188,14 +191,14 @@ void main() {
       final s = await store(scenario.$1);
       await s.settings(language: 'ar');
       await tester.pumpWidget(app(s, scenario.$2));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       expect(
         Directionality.of(tester.element(find.byType(Scaffold).first)),
         TextDirection.rtl,
       );
       expect(tester.takeException(), isNull);
       await tester.drag(find.byType(ListView).last, const Offset(0, -700));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       expect(tester.takeException(), isNull);
     });
   }
@@ -217,7 +220,7 @@ void main() {
           final s = await store();
           await s.settings(language: language);
           await tester.pumpWidget(app(s, '/login'));
-          await tester.pumpAndSettle();
+          await pumpUi(tester);
           expect(find.text(s.t('Welcome back')), findsOneWidget);
           expect(find.textContaining('Demo authentication'), findsNothing);
           expect(find.byKey(const ValueKey('preview-manager')), findsNothing);
@@ -245,7 +248,7 @@ void main() {
           }
           await reveal(tester, find.text(s.t('Preview access')));
           await tester.tap(find.text(s.t('Preview access')));
-          await tester.pumpAndSettle();
+          await pumpUi(tester);
           expect(find.byKey(const ValueKey('preview-manager')), findsOneWidget);
           expect(tester.takeException(), isNull);
         },
@@ -256,7 +259,7 @@ void main() {
     tester,
   ) async {
     await tester.pumpWidget(app(await store(), '/payments'));
-    await tester.pumpAndSettle();
+    await pumpUi(tester);
     expect(find.text('Welcome back'), findsOneWidget);
     expect(find.text('Payments management'), findsNothing);
   });
@@ -264,7 +267,7 @@ void main() {
     tester,
   ) async {
     await tester.pumpWidget(app(await store('tenant'), '/owner/properties'));
-    await tester.pumpAndSettle();
+    await pumpUi(tester);
     expect(find.text('Tenant dashboard'), findsAtLeastNWidgets(1));
     expect(find.text('My properties'), findsNothing);
   });
@@ -274,22 +277,22 @@ void main() {
       await size(tester, 390);
       final s = await store();
       await tester.pumpWidget(app(s, '/login'));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       await tester.tap(find.byKey(const Key('auth-submit')));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       expect(
         find.text('Please complete the required fields correctly.'),
         findsAtLeastNWidgets(1),
       );
       await reveal(tester, find.text('Preview access'));
       await tester.tap(find.text('Preview access'));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       await reveal(tester, find.byKey(const ValueKey('preview-manager')));
       await tester.tap(find.byKey(const ValueKey('preview-manager')));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       await reveal(tester, find.byKey(const Key('auth-submit')));
       await tester.tap(find.byKey(const Key('auth-submit')));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       expect(s.role, 'manager');
       expect(find.text('Property operations & collections'), findsOneWidget);
     },
@@ -300,10 +303,10 @@ void main() {
       await size(tester, 390);
       final s = await store('manager');
       await tester.pumpWidget(app(s, '/properties/add/step-1'));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       await reveal(tester, find.byKey(const Key('interactive-wizard-next')));
       await tester.tap(find.byKey(const Key('interactive-wizard-next')));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       expect(s.properties().length, (seed['properties'] as List).length);
       await reveal(tester, find.byKey(const ValueKey('input-name')));
       await tester.enterText(
@@ -329,12 +332,12 @@ void main() {
         }
         await reveal(tester, find.byKey(const Key('interactive-wizard-next')));
         await tester.tap(find.byKey(const Key('interactive-wizard-next')));
-        await tester.pumpAndSettle();
+        await pumpUi(tester);
         expect(find.textContaining('Step ${step + 1} / 6'), findsOneWidget);
       }
       await reveal(tester, find.byKey(const Key('interactive-wizard-next')));
       await tester.tap(find.byKey(const Key('interactive-wizard-next')));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       expect(s.properties().length, (seed['properties'] as List).length + 1);
       expect(s.properties().first['name'], 'Widget demo villa');
       expect(find.text('Widget demo villa'), findsOneWidget);
@@ -359,12 +362,12 @@ void main() {
           monitorSession: false,
         ),
       );
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       final dropdown = find.byType(DropdownButtonFormField<String>).first;
       await tester.tap(dropdown);
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       await tester.tap(find.text('Al-Nakheel Private Chalet').last);
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       await tester.enterText(
         find.byKey(const ValueKey('input-start')),
         '2035-01-10',
@@ -375,7 +378,7 @@ void main() {
       );
       await reveal(tester, find.byKey(const Key('submit-demo-booking')));
       await tester.tap(find.byKey(const Key('submit-demo-booking')));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       expect(s.records('bookings').first['status'], 'confirmed');
       expect(s.records('bookings').first['amount'], 2550);
       expect(find.text('My bookings'), findsAtLeastNWidgets(1));
@@ -387,12 +390,12 @@ void main() {
       await size(tester, 390);
       final s = await store('owner');
       await tester.pumpWidget(app(s, '/owner/maintenance'));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       await reveal(tester, find.text('Approve').first);
       await tester.tap(find.text('Approve').first);
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       await tester.tap(find.text('Confirm'));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       expect(s.records('maintenance').first['status'], 'approved');
       expect(s.records('maintenance').any((m) => m['id'] == 'm3'), isFalse);
     },
@@ -403,20 +406,20 @@ void main() {
       await size(tester, 390);
       final s = await store('manager');
       await tester.pumpWidget(app(s, '/settings'));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       Future<void> choose(String key, String option, double delta) async {
         await reveal(tester, find.byKey(ValueKey(key)));
         await tester.tap(find.byKey(ValueKey(key)));
-        await tester.pumpAndSettle();
+        await pumpUi(tester);
         await tester.scrollUntilVisible(
           find.text(option),
           delta,
           scrollable: find.byType(Scrollable).last,
           maxScrolls: 50,
         );
-        await tester.pumpAndSettle();
+        await pumpUi(tester);
         await tester.tap(find.text(option).last);
-        await tester.pumpAndSettle();
+        await pumpUi(tester);
       }
 
       await choose('choice-country-SA', 'US · United States', 500);
@@ -435,7 +438,7 @@ void main() {
       );
       await reveal(tester, find.byKey(const Key('save-global-preferences')));
       await tester.tap(find.byKey(const Key('save-global-preferences')));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       expect(s.preferences['country'], 'US');
       expect(s.preferences['currency'], 'USD');
       expect(s.preferences['timeZone'], 'America/New_York');
@@ -452,10 +455,10 @@ void main() {
       await size(tester, 390);
       final s = await store('manager');
       await tester.pumpWidget(app(s, '/properties'));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       await reveal(tester, find.text('Edit').first);
       await tester.tap(find.text('Edit').first);
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       await reveal(tester, find.byKey(const ValueKey('input-name')));
       await tester.enterText(
         find.byKey(const ValueKey('input-name')),
@@ -463,11 +466,11 @@ void main() {
       );
       await reveal(tester, find.byKey(const Key('interactive-wizard-back')));
       await tester.tap(find.byKey(const Key('interactive-wizard-back')));
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       expect(s.property('p1')!['name'], 'Al-Yasmin Compound II');
       await reveal(tester, find.text('Edit').first);
       await tester.tap(find.text('Edit').first);
-      await tester.pumpAndSettle();
+      await pumpUi(tester);
       await reveal(tester, find.byKey(const ValueKey('input-name')));
       await tester.enterText(
         find.byKey(const ValueKey('input-name')),
@@ -476,7 +479,7 @@ void main() {
       for (var i = 1; i <= 6; i++) {
         await reveal(tester, find.byKey(const Key('interactive-wizard-next')));
         await tester.tap(find.byKey(const Key('interactive-wizard-next')));
-        await tester.pumpAndSettle();
+        await pumpUi(tester);
         expect(tester.takeException(), isNull);
       }
       expect(s.property('p1')!['name'], 'Edited portfolio residence');
@@ -504,19 +507,19 @@ void main() {
     });
     final id = s.all('units').last['id'];
     await tester.pumpWidget(app(s, '/units'));
-    await tester.pumpAndSettle();
+    await pumpUi(tester);
     await tester.enterText(find.byType(TextFormField).first, 'U-001');
-    await tester.pumpAndSettle();
+    await pumpUi(tester);
     await reveal(tester, find.text('Delete').first);
     await tester.tap(find.text('Delete').first);
-    await tester.pumpAndSettle();
+    await pumpUi(tester);
     await tester.tap(find.text('Cancel').last);
-    await tester.pumpAndSettle();
+    await pumpUi(tester);
     expect(s.all('units').any((u) => u['id'] == id), true);
     await tester.tap(find.text('Delete').first);
-    await tester.pumpAndSettle();
+    await pumpUi(tester);
     await tester.tap(find.text('Confirm'));
-    await tester.pumpAndSettle();
+    await pumpUi(tester);
     expect(s.all('units').any((u) => u['id'] == id), false);
     expect(s.property(p['id'])!['unitCount'], 0);
     expect(tester.takeException(), isNull);
@@ -528,22 +531,22 @@ void main() {
     final s = await store('manager');
     await s.bookingStatus('b2', 'approved');
     await tester.pumpWidget(app(s, '/settings'));
-    await tester.pumpAndSettle();
+    await pumpUi(tester);
     await reveal(tester, find.text('Reset preview data'));
     await tester.tap(find.text('Reset preview data'));
-    await tester.pumpAndSettle();
+    await pumpUi(tester);
     await tester.tap(find.text('Confirm'));
-    await tester.pumpAndSettle();
+    await pumpUi(tester);
     expect(
       s.all('bookings').firstWhere((b) => b['id'] == 'b2')['status'],
       'pending',
     );
     await tester.pumpWidget(const SizedBox.shrink());
     await tester.pumpWidget(app(s, '/profile'));
-    await tester.pumpAndSettle();
+    await pumpUi(tester);
     await reveal(tester, find.text('Logout'));
     await tester.tap(find.text('Logout'));
-    await tester.pumpAndSettle();
+    await pumpUi(tester);
     expect(s.user, isNull);
     expect(find.text('Welcome back'), findsOneWidget);
   });

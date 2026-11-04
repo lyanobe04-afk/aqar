@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-04",
+  "laravelTests": 74,
+  "laravelAssertions": 381,
+  "javascriptTests": 28,
+  "flutterTests": 249,
+  "newFlutterHeaderCases": 18,
+  "flutterAnalysis": "clean",
+  "releaseWebBuild": "passed",
+  "httpScreens": 92,
+  "linksChecked": 765,
+  "assetReferencesChecked": 623,
+  "protectedFilesUnchanged": 113,
+  "nativeDeviceScreenshots": false,
+  "screenshots": [
+    "flutter-desktop-ar-language.jpg",
+    "flutter-desktop-en-notifications.jpg",
+    "flutter-desktop-en-profile.jpg",
+    "flutter-mobile-ar-notifications.jpg",
+    "flutter-mobile-ar-profile.jpg",
+    "flutter-mobile-en-language.jpg",
+    "web-desktop-ar-profile.jpg",
+    "web-desktop-en-language.jpg",
+    "web-desktop-en-notifications.jpg",
+    "web-desktop-en-profile.jpg",
+    "web-mobile-ar-language.jpg",
+    "web-mobile-ar-notifications.jpg",
+    "web-mobile-en-profile.jpg",
+    "web-owner-mobile-ar.jpg"
+  ]
+}

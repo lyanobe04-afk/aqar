@@ -1,0 +1,2082 @@
+[
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "en",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "before/web-manager-en-1440.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "en",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "before/web-manager-en-1280.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "en",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "before/web-manager-en-1024.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "en",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "before/web-manager-en-768.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "en",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "before/web-manager-en-390.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "before/web-manager-ar-1440.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "before/web-manager-ar-1280.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "before/web-manager-ar-1024.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "before/web-manager-ar-768.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "before/web-manager-ar-390.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "en",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "before/web-owner-en-1440.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "en",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "before/web-owner-en-1280.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "en",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "before/web-owner-en-1024.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "en",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "before/web-owner-en-768.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "en",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "before/web-owner-en-390.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "before/web-owner-ar-1440.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "before/web-owner-ar-1280.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "before/web-owner-ar-1024.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "before/web-owner-ar-768.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "before/web-owner-ar-390.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "before/web-tenant-en-1440.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "before/web-tenant-en-1280.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "before/web-tenant-en-1024.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "before/web-tenant-en-768.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "before/web-tenant-en-390.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "before/web-tenant-ar-1440.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "before/web-tenant-ar-1280.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "before/web-tenant-ar-1024.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "before/web-tenant-ar-768.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "before/web-tenant-ar-390.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "before/web-account-type-en-1440.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "before/web-account-type-en-1280.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "before/web-account-type-en-1024.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "before/web-account-type-en-768.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "before/web-account-type-en-390.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "before/web-account-type-ar-1440.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "before/web-account-type-ar-1280.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "before/web-account-type-ar-1024.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "before/web-account-type-ar-768.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "before/web-account-type-ar-390.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "before/flutter-account-type-en-1440.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "before/flutter-account-type-en-1280.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "before/flutter-account-type-en-1024.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "before/flutter-account-type-en-768.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "before/flutter-account-type-en-390.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "before/flutter-account-type-ar-1440.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "before/flutter-account-type-ar-1280.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "before/flutter-account-type-ar-1024.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "before/flutter-account-type-ar-768.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "before/flutter-account-type-ar-390.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "en",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "before/flutter-manager-en-1440.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "en",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "before/flutter-manager-en-1280.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "en",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "before/flutter-manager-en-1024.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "en",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "before/flutter-manager-en-768.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "en",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "before/flutter-manager-en-390.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "before/flutter-manager-ar-1440.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "before/flutter-manager-ar-1280.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "before/flutter-manager-ar-1024.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "before/flutter-manager-ar-768.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "before/flutter-manager-ar-390.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "en",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "before/flutter-owner-en-1440.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "en",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "before/flutter-owner-en-1280.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "en",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "before/flutter-owner-en-1024.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "en",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "before/flutter-owner-en-768.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "en",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "before/flutter-owner-en-390.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "before/flutter-owner-ar-1440.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "before/flutter-owner-ar-1280.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "before/flutter-owner-ar-1024.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "before/flutter-owner-ar-768.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "before/flutter-owner-ar-390.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "before/flutter-tenant-en-1440.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "before/flutter-tenant-en-1280.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "before/flutter-tenant-en-1024.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "before/flutter-tenant-en-768.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "before/flutter-tenant-en-390.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "before/flutter-tenant-ar-1440.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "before/flutter-tenant-ar-1280.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "before/flutter-tenant-ar-1024.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "before/flutter-tenant-ar-768.jpg"
+  },
+  {
+    "stage": "before",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "before/flutter-tenant-ar-390.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "after/web-owner-ar-1440.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "after/web-owner-ar-1280.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "after/web-owner-ar-1024.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "after/web-owner-ar-768.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "after/web-owner-ar-390.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "after/web-manager-ar-1440.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "after/web-manager-ar-1280.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "after/web-manager-ar-1024.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "after/web-manager-ar-768.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "after/web-manager-ar-390.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "after/web-tenant-ar-1440.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "after/web-tenant-ar-1280.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "after/web-tenant-ar-1024.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "after/web-tenant-ar-768.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "after/web-tenant-ar-390.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "after/web-account-type-ar-1440.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "after/web-account-type-ar-1280.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "after/web-account-type-ar-1024.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "after/web-account-type-ar-768.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "after/web-account-type-ar-390.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "after/web-account-type-en-1440.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "after/web-account-type-en-1280.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "after/web-account-type-en-1024.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "after/web-account-type-en-768.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "after/web-account-type-en-390.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "en",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "after/web-manager-en-1440.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "en",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "after/web-manager-en-1280.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "en",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "after/web-manager-en-1024.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "en",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "after/web-manager-en-768.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "manager",
+    "lang": "en",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "after/web-manager-en-390.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "en",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "after/web-owner-en-1440.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "en",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "after/web-owner-en-1280.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "en",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "after/web-owner-en-1024.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "en",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "after/web-owner-en-768.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "owner",
+    "lang": "en",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "after/web-owner-en-390.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "after/web-tenant-en-1440.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "after/web-tenant-en-1280.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "after/web-tenant-en-1024.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "after/web-tenant-en-768.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "web",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "after/web-tenant-en-390.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "after/flutter-account-type-en-1440.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "after/flutter-account-type-en-1280.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "after/flutter-account-type-en-1024.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "after/flutter-account-type-en-768.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "en",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "after/flutter-account-type-en-390.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "after/flutter-account-type-ar-1440.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "after/flutter-account-type-ar-1280.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "after/flutter-account-type-ar-1024.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "after/flutter-account-type-ar-768.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "account-type",
+    "lang": "ar",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "after/flutter-account-type-ar-390.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "en",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "after/flutter-manager-en-1440.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "en",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "after/flutter-manager-en-1280.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "en",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "after/flutter-manager-en-1024.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "en",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "after/flutter-manager-en-768.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "en",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "after/flutter-manager-en-390.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "after/flutter-manager-ar-1440.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "after/flutter-manager-ar-1280.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "after/flutter-manager-ar-1024.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "after/flutter-manager-ar-768.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "manager",
+    "lang": "ar",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "after/flutter-manager-ar-390.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "after/flutter-owner-ar-1440.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "after/flutter-owner-ar-1280.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "after/flutter-owner-ar-1024.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "after/flutter-owner-ar-768.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "ar",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "after/flutter-owner-ar-390.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "en",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "after/flutter-owner-en-1440.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "en",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "after/flutter-owner-en-1280.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "en",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "after/flutter-owner-en-1024.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "en",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "after/flutter-owner-en-768.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "owner",
+    "lang": "en",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "after/flutter-owner-en-390.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "after/flutter-tenant-ar-1440.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "after/flutter-tenant-ar-1280.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "after/flutter-tenant-ar-1024.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "after/flutter-tenant-ar-768.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "ar",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "after/flutter-tenant-ar-390.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 1440,
+    "height": 1000,
+    "actual": {
+      "height": 1000,
+      "width": 1440
+    },
+    "file": "after/flutter-tenant-en-1440.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 1280,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1280
+    },
+    "file": "after/flutter-tenant-en-1280.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 1024,
+    "height": 900,
+    "actual": {
+      "height": 900,
+      "width": 1024
+    },
+    "file": "after/flutter-tenant-en-1024.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 768,
+    "height": 1024,
+    "actual": {
+      "height": 1024,
+      "width": 768
+    },
+    "file": "after/flutter-tenant-en-768.jpg"
+  },
+  {
+    "stage": "after",
+    "platform": "flutter",
+    "screen": "tenant",
+    "lang": "en",
+    "width": 390,
+    "height": 844,
+    "actual": {
+      "height": 844,
+      "width": 390
+    },
+    "file": "after/flutter-tenant-en-390.jpg"
+  }
+]

@@ -1,3 +1,5 @@
+import 'helpers/pump_ui.dart';
+
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -8,6 +10,7 @@ import 'package:aqar_mobile/demo/interactive_app.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
+
   late Record seed, translations;
   setUpAll(() async {
     seed = jsonDecode(
@@ -70,19 +73,19 @@ void main() {
                 monitorSession: false,
               ),
             );
-            await tester.pumpAndSettle();
+            await pumpUi(tester);
             for (var i = 1; i < 8; i++) {
               final picker = find.byType(DropdownButtonFormField<int>);
               if (picker.evaluate().isNotEmpty) {
                 await tester.ensureVisible(picker);
                 await tester.tap(picker);
-                await tester.pumpAndSettle();
+                await pumpUi(tester);
                 final option = find
                     .text('${i + 1} / 8 · ${s.t(labels[i])}')
                     .last;
                 await tester.ensureVisible(option);
                 await tester.tap(option);
-                await tester.pumpAndSettle();
+                await pumpUi(tester);
               } else {
                 final stepButton = find.widgetWithText(
                   TextButton,
@@ -90,7 +93,7 @@ void main() {
                 );
                 await tester.ensureVisible(stepButton);
                 await tester.tap(stepButton);
-                await tester.pumpAndSettle();
+                await pumpUi(tester);
               }
               expect(find.text(s.t(labels[i])), findsAtLeastNWidgets(1));
               expect(tester.takeException(), isNull);

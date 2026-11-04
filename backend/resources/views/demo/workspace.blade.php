@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="{{ asset('assets/aqar/manager.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/aqar/demo.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/aqar/presentation.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/aqar/shared-header.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/aqar/dashboard-layout.css') }}">
     @if ($screen === 'login')
     <link rel="stylesheet" href="{{ asset('assets/aqar/login.css') }}">
     @endif

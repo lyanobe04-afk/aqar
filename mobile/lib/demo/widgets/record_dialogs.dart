@@ -6,7 +6,7 @@ extension _RecordDialogs on _InteractivePageState {
     Record v,
     List<Widget> Function() fields,
     Future<void> Function() submit, {
-    String label = 'Save demo changes',
+    String label = 'Save changes',
   }) async {
     final key = GlobalKey<FormState>();
     String? failure;

@@ -13,6 +13,8 @@ import '../widgets/demo_widgets.dart'
 import 'demo_store.dart';
 import 'demo_forms.dart';
 import 'widgets/login_layout.dart';
+import 'widgets/shared_header.dart';
+import 'widgets/dashboard_layout.dart';
 import 'widgets/welcome_layout.dart';
 
 part 'screens/account_screens.dart';
@@ -370,37 +372,25 @@ class _InteractivePageState extends State<InteractivePage> {
                   ),
                 ),
                 actions: [
-                  TextButton(
-                    key: const Key('switch-language'),
-                    onPressed: () async =>
-                        s.settings(language: s.locale == 'en' ? 'ar' : 'en'),
-                    child: Text(s.locale == 'en' ? 'العربية' : 'English'),
-                  ),
-                  if (!isPublic)
-                    IconButton(
-                      tooltip: t('Notifications'),
-                      icon: Stack(
-                        clipBehavior: Clip.none,
-                        children: [
-                          const Icon(Icons.notifications_outlined),
-                          if (s.preferences['notifications'] == true &&
-                              s
-                                  .records('notifications')
-                                  .any((n) => n['read'] != true))
-                            const PositionedDirectional(
-                              end: -2,
-                              top: -2,
-                              child: ExcludeSemantics(
-                                child: CircleAvatar(
-                                  radius: 4,
-                                  backgroundColor: AqarColors.emerald,
-                                ),
-                              ),
-                            ),
-                        ],
+                  AqarHeaderActions(
+                    store: s,
+                    signedIn: !isPublic,
+                    onProfile: () => go('/profile'),
+                    onNotifications: () => go(scoped('notifications')),
+                    onLogout: () async {
+                      await s.logout();
+                      if (mounted) go('/login', reset: true);
+                    },
+                    onRead: (id) => run(
+                      () => s.commit(
+                        () =>
+                            s
+                                    .records('notifications')
+                                    .firstWhere((n) => n['id'] == id)['read'] =
+                                true,
                       ),
-                      onPressed: () => go(scoped('notifications')),
                     ),
+                  ),
                 ],
               ),
         drawer: isPublic || desktop ? null : Drawer(child: menu),
@@ -408,13 +398,17 @@ class _InteractivePageState extends State<InteractivePage> {
           top: false,
           child: Row(
             children: [
-              if (!isPublic && desktop) SizedBox(width: 250, child: menu),
+              if (!isPublic && desktop) SizedBox(width: 240, child: menu),
               if (!isPublic && desktop) const VerticalDivider(width: 1),
               Expanded(
                 child: Center(
                   child: ConstrainedBox(
                     constraints: BoxConstraints(
-                      maxWidth: customAuth ? double.infinity : 1050,
+                      maxWidth: customAuth
+                          ? double.infinity
+                          : ['/', '/owner', '/tenant'].contains(path)
+                          ? 1280
+                          : 1050,
                     ),
                     child: body(),
                   ),
@@ -805,78 +799,19 @@ class _InteractivePageState extends State<InteractivePage> {
     );
   }
 
-  Widget dashboard() => pageView(
-    s.role == 'owner'
-        ? 'Owner dashboard'
-        : s.role == 'tenant'
-        ? 'Tenant dashboard'
-        : 'Property operations & collections',
-    [
-      metrics(),
-      actions(
-        s.role == 'manager'
-            ? [
-                action(
-                  'Add property',
-                  () => go('/properties/add/step-1'),
-                  primary: true,
-                ),
-                action('Create booking', () => bookingDialog()),
-                action('Record simulated payment', () => paymentDialog()),
-              ]
-            : s.role == 'owner'
-            ? [
-                action(
-                  'My properties',
-                  () => go('/owner/properties'),
-                  primary: true,
-                ),
-                action('Maintenance approvals', () => go('/owner/maintenance')),
-              ]
-            : [
-                action(
-                  'Browse properties',
-                  () => go('/tenant/browse'),
-                  primary: true,
-                ),
-                action('Submit maintenance request', () => maintenanceDialog()),
-              ],
-      ),
-      card(
-        'Recent bookings',
-        s
-            .records('bookings')
-            .take(3)
-            .map(
-              (b) => ListTile(
-                contentPadding: EdgeInsets.zero,
-                title: Text(
-                  propName(b['propertyId']),
-                  style: const TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                subtitle: Text(
-                  '${s.date(b['start'])} → ${s.date(b['end'])}\n${money(b['amount'], b)}',
-                  style: const TextStyle(fontSize: 11),
-                ),
-                trailing: badge(b['status']),
-                onTap: () => recordDetails('bookings', b),
-              ),
-            )
-            .toList(),
-      ),
-      card('Portfolio overview', [
-        pair('Collected', money(s.totals()['collected'])),
-        pair('Current occupancy', '${s.totals()['occupancy']}%'),
-        pair('Financial activity', t('SIMULATED · No money moved')),
-        action(
-          s.role == 'tenant' ? 'My payments' : 'Financial reports',
-          () => go(scoped(s.role == 'tenant' ? 'payments' : 'reports')),
-        ),
-      ]),
-    ],
+  Widget dashboard() => AqarDashboard(
+    store: s,
+    formatMoney: money,
+    feedback: error == null ? null : errorBox(error!),
+    onAddProperty: () => go('/properties/add/step-1'),
+    onCreateBooking: () => bookingDialog(),
+    onPayment: () => paymentDialog(),
+    onMaintenance: () => maintenanceDialog(),
+    onBrowse: () => go('/tenant/browse'),
+    onProperties: () => go('/owner/properties'),
+    onApprovals: () => go('/owner/maintenance'),
+    onReports: () => go(scoped(s.role == 'tenant' ? 'payments' : 'reports')),
+    onBooking: (b) => recordDetails('bookings', b),
   );
   Widget filters({
     List<String> statuses = const [],
